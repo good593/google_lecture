@@ -1,0 +1,50 @@
+.display-none{ 
+	display: none;
+}
+.invisible{ 
+	visibility: hidden; 
+}
+
+.block1{ 
+	width: 300px; 
+	border: 3px solid #333 
+}
+.block2{ 
+	width: 200px; 
+	border: 3px solid #999 
+}
+
+.inline1{
+	background: #09c;
+}
+.inline2{
+	width: 200px; /* 이 값은 무시됩니다 */
+	border: 3px solid #999;
+}
+
+.inline-block1{
+	display: inline-block;
+	background: #09c;
+	height: 45px;
+	/* 원래 inline 요소의 높이는 글자(폰트)의 높이를 바탕으로 설정되지만,
+	inline-block을 이용하면 임의로 높이 또한 설정을 할 수 있습니다. */
+}
+.inline-block2{
+	display: inline-block;
+	width: 200px; /* 이 값은 이제 정상 작동합니다 */
+	border: 3px solid #999;
+}
+
+.padding1{
+	background-color: greenyellow;
+	padding: 20px;
+	border: 5px solid red;
+}
+
+.margin1{
+	margin: 30px;
+	padding: 20px;
+	border: 5px solid red;
+}
+
+

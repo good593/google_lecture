@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+    font-family: "Courier", "consolas", serif;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family : 'SDSamliphopangche_Outline' ;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+h3 { 
+    color: white;
+    font-family : 'SDSamliphopangche_Outline' ; 
+    text-align: center;
+}
+
+p{
+    color: aquamarine;
+    font-family: "Arial", "consolas", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: wavy underline;
+    font-size: 18px;
+}
