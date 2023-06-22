@@ -1,5 +1,5 @@
 body {
-    background-image: url("../img/card.jpg");
+    background-image: url("../../../data/img/card.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -7,6 +7,7 @@ body {
 }
 
 h1 {
+    color: red;
     background: linear-gradient(to right, skyblue, white);
     background-repeat: no-repeat;
     background-attachment: fixed;

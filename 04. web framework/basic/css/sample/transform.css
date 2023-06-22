@@ -7,10 +7,10 @@
     background-color: lightskyblue;
 
     transform: translateX(-50px);
-    /* transform: translateY(-50px);
+    transform: translateY(-50px);
     transform: translate(50px, 50px);
 
-    transform: rotateX(180deg);
+    /* transform: rotateX(180deg);
     transform: rotateY(180deg);
     transform: rotateZ(180deg);
     

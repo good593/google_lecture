@@ -1,0 +1,22 @@
+
+.grid {
+    gap: 1px;
+    margin-bottom: 8px;
+    border: 16px solid royalblue;
+}
+
+.grid--block {
+    display: grid;
+}
+
+.grid--inline {
+    display: inline-grid;
+}
+
+.item {
+    padding: 8px;
+    color: white;
+    background: silver;
+}
+
+
