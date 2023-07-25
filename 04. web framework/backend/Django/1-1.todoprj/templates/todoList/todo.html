@@ -11,6 +11,11 @@
         <div class="col col-lg-9 col-xl-7">
             <div class="card rounded-3">
             <div class="card-body p-4">
+                {% if messages %}
+                {% for message in messages %}
+                    <h4 style="color: #b22222;">{{message}}</h4>
+                {% endfor %}
+                {% endif %}
 
                 <h4 class="text-center my-3 pb-3">To Do App</h4>
                 <form method="POST" class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2">
@@ -24,6 +29,7 @@
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary">Add Task</button>
                 </div>
+                
                 </form>
                 <a href="{% url 'user-logout' %}"><button style="background: firebrick; color: white;" type="submit" class="btn btn-primary">Logout</button></a>
                 <table class="table mb-4">

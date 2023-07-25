@@ -6,7 +6,7 @@ from django.contrib import messages
 # Create your views here.
 def user_register(request):
     if request.user.is_authenticated:
-        return redirect("home-page")
+        return redirect("todo-list")
 
     elif request.method == "POST":
         username = request.POST.get("username")
@@ -36,7 +36,7 @@ def user_register(request):
 
 def user_login(request):
     if request.user.is_authenticated:
-        return redirect("home-page")
+        return redirect("todo-list")
     elif request.method == "POST":
         username = request.POST.get("uname")
         pwd = request.POST.get("pass")
@@ -44,10 +44,10 @@ def user_login(request):
         validate_user = authenticate(username=username, password=pwd)
         if validate_user is not None:
             login(request, validate_user)
-            return redirect("home-page")
+            return redirect("todo-list")
         else:
             messages.error(request, "Erro, wrong user details or user does not exist")
-            return redirect("login-page")
+            return redirect("user-login")
     else:
         return render(request, "user/login.html", {})
 

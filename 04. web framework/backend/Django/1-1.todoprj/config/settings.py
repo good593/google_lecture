@@ -75,24 +75,24 @@ WSGI_APPLICATION = "config.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.sqlite3",
-#         "NAME": BASE_DIR / "db.sqlite3",
-#     }
-# }
-
-# MySQL: https://velog.io/@devmin/Django-MySQL-Connect
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": "django_db", # 데이터베이스 이름 
-        "USER": "django_root", 
-        "PASSWORD": "django_root1!",
-        "HOST": "localhost",
-        "PORT": "3306"
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
+
+# MySQL: https://velog.io/@devmin/Django-MySQL-Connect
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.mysql",
+#         "NAME": "django_db", # 데이터베이스 이름 
+#         "USER": "django_root", 
+#         "PASSWORD": "django_root1!",
+#         "HOST": "localhost",
+#         "PORT": "3306"
+#     }
+# }
 
 
 # Password validation
