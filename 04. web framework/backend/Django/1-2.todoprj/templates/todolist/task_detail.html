@@ -1,0 +1,21 @@
+{% extends 'base/index.html' %} 
+{% block content %}
+{% load static %}
+<script type="text/javascript" src="{% static 'js/task_detail.js' %}"></script>
+
+<div class="header-bar">
+    <a href="{% url 'task-list' %}">&#8592; Back</a>
+</div>
+
+<div class="card-body">
+    <form method="POST" action="">
+        {% csrf_token %}
+        {{form.as_p}}
+    </form>
+    <div class="button-wrapper">
+        <a class="button txt-center" href="{% url 'task-update' task.id %}">Update</a>
+        <a class="button txt-center" href="{% url 'task-delete' task.id %}">Delete</a>
+    </div>
+</div>
+
+{% endblock content %}
