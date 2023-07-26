@@ -7,9 +7,7 @@ from .forms import UserForm
 
 # Create your views here.
 def user_login(request):
-    if request.user.is_authenticated:
-        return redirect("task-list")
-    elif request.method == 'POST':
+    if request.method == 'POST':
         username = request.POST.get("username")
         pwd = request.POST.get("password")
         validate_user = authenticate(username=username, password=pwd)
@@ -25,9 +23,7 @@ def user_login(request):
     return render(request, template_name, context)  
 
 def user_register(request):
-    if request.user.is_authenticated:
-        return redirect("task-list")
-    elif request.method == "POST":
+    if request.method == "POST":
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()

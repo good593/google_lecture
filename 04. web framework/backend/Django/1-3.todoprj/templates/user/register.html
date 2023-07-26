@@ -1,0 +1,27 @@
+{% extends 'base/index.html' %}
+{% block content %}
+
+<div class="header-bar">
+    <h1>Register</h1>
+</div>
+
+<div class="card-body">
+    <form method="POST">
+        {% csrf_token %}
+        {% for field in form %} 
+            <label>{{field.label}}</label>
+            {{field}}
+            {% if field.errors %}
+            <ul>
+                {% for error in field.errors %} 
+                <li class="errorMessage">{{ error }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        {% endfor %}
+        <input style="margin-top:10px ;" class="button" type="submit" value="Register">
+    </form>
+    <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+</div>
+
+{% endblock content %}

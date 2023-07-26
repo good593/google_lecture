@@ -6,7 +6,7 @@ from .models import Task
 from .forms import TaskForm
 
 # Create your views here.
-@login_required
+@login_required(login_url="/user/login/")
 def task_list(request):
     template_name = 'todoList/task_list.html' 
     context = {}
@@ -22,7 +22,7 @@ def task_list(request):
 
     return render(request, template_name, context)
 
-@login_required
+@login_required(login_url="/user/login/")
 def task_detail(request, pk):
     template_name = 'todoList/task_detail.html'
     get_task = Task.objects.get(id=pk)
@@ -33,7 +33,7 @@ def task_detail(request, pk):
 
     return render(request, template_name, context) 
 
-@login_required
+@login_required(login_url="/user/login/")
 def task_create(request):
     if request.method == "POST":
         form = TaskForm(request.POST)
@@ -48,7 +48,7 @@ def task_create(request):
 
         return render(request, template_name, context) 
 
-@login_required
+@login_required(login_url="/user/login/")
 def task_update(request, pk):
     get_task = Task.objects.get(id=pk)
 
@@ -68,7 +68,7 @@ def task_update(request, pk):
 
         return render(request, template_name, context) 
 
-@login_required
+@login_required(login_url="/user/login/")
 def task_delete(request, pk):
     get_task = Task.objects.get(id=pk)
     if request.method == "POST":
