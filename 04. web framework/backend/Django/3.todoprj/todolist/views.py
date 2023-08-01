@@ -13,19 +13,19 @@ def task_list(request):
 
     search_input = request.GET.get('search-area') or ''
     if search_input:
-        context['taskList'] = Task.objects.filter(title__startswith=search_input)
+        context['taskList'] = Task.objects.filter(user=request.user, title__startswith=search_input)
     else:
         context['taskList'] = Task.objects.filter(user=request.user)
 
     context['search_input'] = search_input
-    context['cnt'] = Task.objects.filter(complete=False).count()
+    context['cnt'] = Task.objects.filter(user=request.user, complete=False).count()
 
     return render(request, template_name, context)
 
 @login_required
 def task_detail(request, pk):
     template_name = 'todoList/task_detail.html'
-    get_task = Task.objects.get(id=pk)
+    get_task = Task.objects.get(id=pk, user=request.user)
     context={
         'form':TaskForm(instance=get_task),
         'task':get_task
@@ -50,13 +50,13 @@ def task_create(request):
 
 @login_required
 def task_update(request, pk):
-    get_task = Task.objects.get(id=pk)
+    get_task = Task.objects.get(id=pk, user=request.user)
 
     if request.method == "POST":
         form = TaskForm(request.POST, instance=get_task)
         if form.is_valid():
             task = form.save(commit=False)
-            task.pk = pk
+            task.id = pk
             task.save()
             return redirect('task-list')
     else:
@@ -70,7 +70,7 @@ def task_update(request, pk):
 
 @login_required
 def task_delete(request, pk):
-    get_task = Task.objects.get(id=pk)
+    get_task = Task.objects.get(id=pk, user=request.user)
     if request.method == "POST":
         get_task.delete()
         return redirect('task-list')
