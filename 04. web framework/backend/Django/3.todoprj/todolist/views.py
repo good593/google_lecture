@@ -77,7 +77,6 @@ def task_delete(request, pk):
     else:
         template_name = 'todoList/task_delete.html'
         context={
-            'form':TaskForm(instance=get_task),
             'task':get_task
         }
         return render(request, template_name, context)  

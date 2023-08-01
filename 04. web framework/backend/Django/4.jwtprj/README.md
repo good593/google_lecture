@@ -1,5 +1,5 @@
 # 학습목표 
-1. JWT(Json Web Token) 
+1. [JWT(Json Web Token)](https://pyjwt.readthedocs.io/en/stable/) 
 2. exception handler
 3. creating tests
     ```shell
