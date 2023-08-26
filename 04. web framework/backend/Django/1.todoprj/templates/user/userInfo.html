@@ -8,8 +8,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>{{msg1}}</h1>
-    <h1>{{msg2}}</h1>
+    <h1>{{info1}}</h1>
+    {% for fruit in fruits %}
+        <p>{{fruit}}</p>
+    {% endfor %}
+    <h1>{{info2}}</h1>
+    {% for country in countries %}
+        <p>{{country}}</p>
+    {% endfor %}
     <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
 </body>
 </html>

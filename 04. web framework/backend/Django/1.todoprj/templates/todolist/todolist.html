@@ -8,8 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>{{msg1}}</h1>
-    <h1>{{msg2}}</h1>
+    <h1>{{msg}}</h1>
+    {% if todolist %}
+        {% for todo in todolist %}
+            <p>{{todo.title}} / {{todo.color}}</p>
+        {% endfor %}
+    {% endif %}
     <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
 </body>
 </html>
