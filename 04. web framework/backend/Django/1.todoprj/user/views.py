@@ -17,3 +17,5 @@ def userInfo(request):
     }
     return render(request, "user/userInfo.html", context)
 
+
+

@@ -28,5 +28,8 @@ Icon
 **/Django/samples/**
 *.sqlite3
 
+# java 
+bin
+lib 
 # demo
 demo 

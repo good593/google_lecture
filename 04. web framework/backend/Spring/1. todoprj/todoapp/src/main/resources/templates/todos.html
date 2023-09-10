@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Todo App</h1>
+    <form method="post" action="/addTodo">
+        <input type="text" name="todo"/>
+        <input type="submit" name="Add Todo"/>
+    </form>
+    <hr>
+    <ul>
+        <li th:each="todo: ${todos}">
+            <span th:text="${todo.todo}"></span>
+        </li>
+    </ul>
+</body>
+</html>
