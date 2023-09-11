@@ -1,0 +1,10 @@
+.App,
+.App > div div {
+  border: 5px solid red;
+  margin: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

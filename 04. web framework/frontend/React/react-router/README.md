@@ -12,4 +12,5 @@ marp: true
 > npm init react-app 프로젝트명
 > cd 프로젝트명 # 프로젝트로 이동 
 > npm install react-router-dom # router를 사용할 라이브러리 설치 
+> npm start # 프로젝트 실행 
 ```
