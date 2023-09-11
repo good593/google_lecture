@@ -2,8 +2,8 @@
 import './App.css';
 
 import {Provider, useSelector, useDispatch} from 'react-redux';
-import store from './store';
-import counterSlice from './counterSlice';
+import store from './redux/store';
+import counterSlice from './redux/counterSlice';
 
 function Counter() {
   const dispatch = useDispatch();
