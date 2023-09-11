@@ -28,6 +28,9 @@ function Right3() {
         <input type='button' value="+" onClick={() => {
             dispatch({type:'PLUS'})
         }} />
+        <input type='button' value="-" onClick={() => {
+            dispatch({type:'MINUS', step:2})
+        }} />
         </div>
     )
 }

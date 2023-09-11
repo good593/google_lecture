@@ -6,13 +6,17 @@ import {createStore} from 'redux';
 import {Provider, useSelector, useDispatch, connect} from 'react-redux';
 
 function reducer(currentState, action) {
-    const newState = {...currentState};
+    
 
     if (action.type === 'PLUS') {
+        const newState = {...currentState};
         newState.number ++;
+        return newState;
+    } else if (action.type === 'MINUS') {
+        return {...currentState, number:currentState.number - action.step }
     }
 
-    return newState;
+    return currentState
 };
 
 const initialState = {number: 1}
