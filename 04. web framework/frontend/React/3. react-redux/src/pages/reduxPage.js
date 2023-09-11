@@ -6,11 +6,6 @@ import {createStore} from 'redux';
 import {Provider, useSelector, useDispatch, connect} from 'react-redux';
 
 function reducer(currentState, action) {
-    if (currentState === undefined) {
-        return {
-            number: 1
-        }
-    }
     const newState = {...currentState};
 
     if (action.type === 'PLUS') {
@@ -20,7 +15,8 @@ function reducer(currentState, action) {
     return newState;
 };
 
-const store = createStore(reducer);
+const initialState = {number: 1}
+const store = createStore(reducer, initialState);
 
 function Redux() {
     return (
