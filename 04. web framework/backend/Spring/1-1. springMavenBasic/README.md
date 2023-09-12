@@ -139,3 +139,6 @@ spring:
 - [1편](https://www.youtube.com/watch?v=7t6tQ4KV37g&t=498s)
 - [2편](https://www.youtube.com/watch?v=1Jc-SD9YrV4)
 
+
+
+1:55
