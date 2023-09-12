@@ -1,3 +1,4 @@
+
 # Spring Data Source 설정 
 spring:
 
@@ -7,10 +8,4 @@ spring:
     password: u1234
     driver-class-name: com.mysql.cj.jdbc.Driver
 
-  jpa:
-    hibernate:
-      ddl-auto: update 
-    properties:
-      hibernate:
-        show_sql: true 
-        format_sql: true 
+
