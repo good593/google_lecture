@@ -12,7 +12,7 @@ marp: true
 
 ---
 ## MVC(Model View Controller) 패턴 
-![Alt text](image-1.png)
+![Alt text](./img/image-1.png)
 
 ---
 ### Controller(컨트롤러)
@@ -71,7 +71,7 @@ marp: true
     - 빌드설정 정보: 소스, 리소스, 라이프 사이클 등 실행할 플러그인 등
     - POM 연관 정보: 의존 프로젝트(모듈) 등 
 ---
-![Alt text](image.png)
+![Alt text](./img/image.png)
 
 ---
 # MySQL 설치
@@ -129,7 +129,7 @@ spring:
 
 ---
 # Spring Boot 도식화
-![Alt text](image-2.png)
+![Alt text](./img/image-2.png)
 
 ---
 # 소스
