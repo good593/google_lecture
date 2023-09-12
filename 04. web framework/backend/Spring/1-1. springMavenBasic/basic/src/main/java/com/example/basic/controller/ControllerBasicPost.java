@@ -2,7 +2,6 @@ package com.example.basic.controller;
 
 import java.util.Map;
 
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,7 +25,7 @@ public class ControllerBasicPost {
   }
 
   @PostMapping("variable1/map")
-  public String postVariable1(@RequestBody Map<String, String> params) {
+  public String postVariable1(@RequestBody Map<String, Object> params) {
     
     params.forEach((strKey, strValue)->{
       System.out.println( strKey +":"+ strValue );

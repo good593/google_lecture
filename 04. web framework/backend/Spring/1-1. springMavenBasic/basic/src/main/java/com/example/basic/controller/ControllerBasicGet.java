@@ -53,7 +53,7 @@ public class ControllerBasicGet {
 
   // http://localhost:8080/api/v1/get/variable5/map?name=name1&email=sample@gmail.com
   @GetMapping(value = "variable5/map")
-  public String getVariable5(@RequestParam Map<String, String> params) {
+  public String getVariable5(@RequestParam Map<String, Object> params) {
 
     params.forEach((strKey, strValue)->{
       System.out.println( strKey +":"+ strValue );
