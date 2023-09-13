@@ -135,6 +135,22 @@ spring:
 
 ![Alt text](./img/image-3.png)
 
+---
+# [유효성 검사(Validation)](https://kdhyo98.tistory.com/80#Jakarta%20Validation%20API%20%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0-1)
+- 서비스의 비즈니스 로직이 올바르게 동작하기 위해 사용되는 데이터에 대한 사전 검증하는 작업이 필요함
+- Validation은 들어오는 데이터에 대해 의도한 형식의 값이 제대로 들어오는지 체크하는 과정을 뜻함 
+
+```
+// Gradle
+implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+// Maven
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-validation</artifactId>
+</dependency>
+
+```
 
 ---
 # 소스

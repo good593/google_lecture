@@ -25,8 +25,18 @@ public class ProductController {
     return productService.getProduct(productId);
   }
 
-  @PostMapping("/")
-  public ProductDto createProduct(@Valid @RequestBody ProductDto productDto) {
+  @PostMapping("/withoutValid")
+  public ProductDto createProductWithoutValid(@RequestBody ProductDto productDto) {
+    String productId = productDto.getProductId();
+    String productName = productDto.getProductName();
+    int productPrice = productDto.getProductPrice();
+    int productStock = productDto.getProductStock();
+
+    return productService.saveProduct(productId, productName, productPrice, productStock);
+  }
+
+  @PostMapping("/withValid")
+  public ProductDto createProductWithValid(@Valid @RequestBody ProductDto productDto) {
     String productId = productDto.getProductId();
     String productName = productDto.getProductName();
     int productPrice = productDto.getProductPrice();
