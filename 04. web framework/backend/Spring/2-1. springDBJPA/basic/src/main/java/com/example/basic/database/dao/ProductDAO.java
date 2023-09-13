@@ -1,6 +1,6 @@
-package com.example.basic.data.dao;
+package com.example.basic.database.dao;
 
-import com.example.basic.data.entity.ProductEntity;
+import com.example.basic.model.entity.ProductEntity;
 
 public interface ProductDAO {
   

@@ -2,11 +2,6 @@
 marp: true
 
 ---
-단축키
-- Override 단축키
-  - 컨트롤러 + .
-
----
 # MySQL 설치
 - dbeaver 설치 
 - Docker 설치
@@ -136,5 +131,16 @@ spring:
 ![Alt text](./img/image-3.png)
 
 
+---
+# 소스
+- https://github.com/Around-Hub-Studio/AroundHub_SpringBoot/tree/master
+
+# 참고자료
+- [1편](https://www.youtube.com/watch?v=7t6tQ4KV37g&t=498s)
+- [2편](https://www.youtube.com/watch?v=1Jc-SD9YrV4)
+
+# 단축키
+- Override 단축키
+  - 컨트롤러 + .
 
 

@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.basic.model.dto.ProductDto;
 import com.example.basic.service.ProductService;
 
+import jakarta.validation.Valid;
+
 @RestController
 @RequestMapping("/api/v1/product")
 public class ProductController {
@@ -23,8 +25,8 @@ public class ProductController {
     return productService.getProduct(productId);
   }
 
-  @PostMapping("/create")
-  public ProductDto createProduct(@RequestBody ProductDto productDto) {
+  @PostMapping("/withoutValid")
+  public ProductDto createProductWithoutValid(@RequestBody ProductDto productDto) {
     String productId = productDto.getProductId();
     String productName = productDto.getProductName();
     int productPrice = productDto.getProductPrice();
@@ -32,5 +34,16 @@ public class ProductController {
 
     return productService.saveProduct(productId, productName, productPrice, productStock);
   }
+
+  @PostMapping("/withValid")
+  public ProductDto createProductWithValid(@Valid @RequestBody ProductDto productDto) {
+    String productId = productDto.getProductId();
+    String productName = productDto.getProductName();
+    int productPrice = productDto.getProductPrice();
+    int productStock = productDto.getProductStock();
+
+    return productService.saveProduct(productId, productName, productPrice, productStock);
+  }
+
 
 }
