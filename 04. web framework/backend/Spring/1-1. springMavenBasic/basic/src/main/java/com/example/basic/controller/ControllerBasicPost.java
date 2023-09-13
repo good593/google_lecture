@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.basic.dto.BasicDto;
+import com.example.basic.data.dto.BasicDto;
+import com.example.basic.data.dto.BasicLombokDto;
 
 @RestController
 @RequestMapping("/api/v1/post")
@@ -31,7 +32,7 @@ public class ControllerBasicPost {
       System.out.println( strKey +":"+ strValue );
     });
 
-    return "PostMapping >> Map<String, String> params";
+    return "PostMapping >> Map<String, Object> params";
   }
 
   @PostMapping(value = "variable2/dto")
@@ -40,6 +41,11 @@ public class ControllerBasicPost {
     return "PostMapping >> "+dto.toString();
   }
 
+  @PostMapping(value = "variable3/dto")
+  public String getVariable3(@RequestBody BasicLombokDto dto) {
+    
+    return "PostMapping >> "+dto.toString();
+  }
 
   
 }

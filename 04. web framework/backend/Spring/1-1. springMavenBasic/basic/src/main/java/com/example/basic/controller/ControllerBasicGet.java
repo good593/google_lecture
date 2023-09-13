@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.basic.dto.BasicDto;
+import com.example.basic.data.dto.BasicDto;
+import com.example.basic.data.dto.BasicLombokDto;
 
 @RestController
 @RequestMapping("/api/v1/get") //@RequestMapping >> GET, POST, PUT 등 모든 HTTP method 요청을 받음
@@ -59,12 +60,19 @@ public class ControllerBasicGet {
       System.out.println( strKey +":"+ strValue );
     });
 
-    return "GetMapping >> Map<String, String> params";
+    return "GetMapping >> Map<String, Object> params";
   }
 
   // http://localhost:8080/api/v1/get/variable6/dto?name=name1&email=sample@gmail.com
   @GetMapping(value = "variable6/dto")
   public String getVariable6(BasicDto dto) {
+    
+    return "GetMapping >> "+dto.toString();
+  }
+
+  // http://localhost:8080/api/v1/get/variable7/dto?name=name1&email=sample@gmail.com
+  @GetMapping(value = "variable7/dto")
+  public String getVariable7(BasicLombokDto dto) {
     
     return "GetMapping >> "+dto.toString();
   }

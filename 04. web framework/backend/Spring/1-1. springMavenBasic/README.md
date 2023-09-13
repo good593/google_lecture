@@ -61,6 +61,7 @@ marp: true
 - REST 기반으로 시스템을 분산하여 확장성과 재사용성을 높임
 - HTTP 표준을 따르고 있어 여러 프로그래밍 언어로 구현할 수 있음
 
+
 ---
 # Maven
 - pom.xml
@@ -70,66 +71,22 @@ marp: true
     - 프로젝트 정보: 프로젝트의 이름, 개발자 목록, 라이센스 등
     - 빌드설정 정보: 소스, 리소스, 라이프 사이클 등 실행할 플러그인 등
     - POM 연관 정보: 의존 프로젝트(모듈) 등 
+- https://mvnrepository.com/
+
 ---
 ![Alt text](./img/image.png)
 
 ---
-# MySQL 설치
-- dbeaver 설치 
-- Docker 설치
-- mysql 설치 폴더 생성
-    - mkdir ./mysql
-    - mkdir ./mysql/database 
+# Lombok
+- 반복되는 메소드를 Annotation을 사용하여 자동으로 작성해주는 라이브러리 
+- 일반적으로 VO, DTO, Model, Entity 등의 데이터 클래스에서 주로 사용함 
+- 대표적으로 많이 사용되는 Annotation
+  - @Getter
+  - @Setter
+  - @NoArgConstructor
+  - @AllArgConstructor
+  - @ToString
 
----
-- ./mysql/docker-compose.yml 파일 생성 
-```
-version: "2"
-
-services:
-  vacation-db:
-    image: mysql
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: "root1234"
-      MYSQL_DATABASE: "examplesdb"
-      MYSQL_USER: "urstory"
-      MYSQL_PASSWORD: "u1234"
-    command:
-      - --character-set-server=utf8mb4
-      - --collation-server=utf8mb4_unicode_ci
-    volumes:
-      - ./database/init/:/docker-entrypoint-initdb.d/
-      - ./database/datadir/:/var/lib/mysql
-    platform: linux/x86_64
-    ports:
-      - 3306:3306
-```
-
----
-### MySQL 실행
-```
-> cd ./mysql # docker-compose.yml이 있는 폴더로 이동 
-> docker-compose up -d # mysql 생성 및 실행 
-> docker ps # 생성된 mysql 확인 
-```
-### Spring Boot에 MySQL 적용
-- ./src/resources/application.yml 생성 (application.properties 파일 삭제!!)
-```
-# Spring Data Source 설정 
-spring:
-  datasource:
-    url: jdbc:mysql://127.0.0.1:3306/examplesdb?userSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul
-    username: urstory
-    password: u1234
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
-```
-
-
----
-# Spring Boot 도식화
-![Alt text](./img/image-2.png)
 
 ---
 # 소스

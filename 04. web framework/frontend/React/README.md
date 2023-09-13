@@ -8,6 +8,9 @@
 # RTK QUERY
 - https://www.youtube.com/watch?v=pnpO3o8mLBU
 
+# CSS
+- https://www.youtube.com/watch?v=or3np70c7zU
+- https://www.youtube.com/watch?v=PWePBteFeeE
 
 # webpack
 - https://goo-gy.github.io/2021-12-31-webpack-react
