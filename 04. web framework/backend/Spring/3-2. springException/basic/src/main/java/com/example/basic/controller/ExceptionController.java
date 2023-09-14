@@ -13,14 +13,23 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
 @RestController
 @RequestMapping("/api/v1/exception")
 public class ExceptionController {
   
   @GetMapping("/test")
-  public String test() {
-    return "Hello World";
+  public String test() throws Exception {
+    String message = "Hello World\n";
+
+    try {
+      message += "try start\n";
+      throw new Exception("[ExceptionController][test] Exception 오류 발생!!");
+    } catch (Exception e) {
+      // TODO: handle exception
+      message += e.getMessage();
+    }
+
+    return message;
   }
 
   @GetMapping("/exception")

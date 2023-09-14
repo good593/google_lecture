@@ -120,6 +120,96 @@ public @interface RestControllerAdvice {
 ```
 
 ---
+# [Custom Exception](https://tecoble.techcourse.co.kr/post/2020-08-17-custom-exception/)
+- 자바에서는 기본적으로 충분한 예외(Java Exceptions)들을 제공하고 있다. 
+- 하지만 비지니스 로직에 의한 논리 오류인 경우에는 사용자 정의 예외(Custom Exception)를 이용하는 것이 좋을 수 있다. 
+
+```java
+@Getter
+public class HubException extends Exception {
+  
+  private HttpStatus httpStatus;
+
+  public HubException(HttpStatus httpStatus, String message) {
+    super(message);
+    this.httpStatus = httpStatus;
+  }
+}
+```
+
+---
+## Custom Exception의 장점 
+1. 예외 이름으로도 정보 전달이 가능하다.
+    - 상품 오류, 고객 오류 등 
+2. 상세한 예외를 정의할 수 있다.
+    - 제고상품50미만 오류, 고객 잔고 10만원미만 오류 등 
+3. 예외에 대한 응집도가 향상된다.
+    - 예외 메시지, 데이터 가공 메소드 등 각 예외에 맞는 메시지/메소드를 관리하기 편하다. 
+4. 예외발생 후처리가 용이하다.
+    - 각 예외별 후처리용 메소드를 정의할 수 있다. 
+
+---
+# [Enum](https://bcp0109.tistory.com/334)
+Java Enum 타입은 일정 개수의 상수 값을 정의하고, 그 외의 값은 허용하지 않습니다.
+과거에는 특정 상수값을 사용하기 위해선 모두 상수로 선언해서 사용했습니다.
+
+```java
+public static final String MON = "Monday";
+public static final String TUE = "Tuesday";
+public static final String WED = "Wednesday";
+```
+이렇게 사용하면 개발자가 실수하기도 쉽고 한눈에 알아보기도 쉽지 않습니다.    
+그리고 관련있는 값들끼리 묶으려면 접두어를 사용해서 점점 변수명도 지저분해집니다.
+
+> Enum 클래스는 이러한 문제점을 말끔히 해결해주는 굉장히 유용한 클래스입니다.
+
+---
+## 정의 및 생성 
+
+```java
+
+public enum Day1 {
+    MON, TUE, WED, THU, FRI, SAT, SUN
+};
+
+Day1.MON.name(); // MON
+
+public enum Day2 {
+    MON("Monday"), TUE("Tuesday"), WED("Wednesday");
+
+    private final String label;
+
+    Day2(String label) {
+        this.label = label;
+    }
+
+    public String label() {
+        return label;
+    }
+};
+
+Day2.MON.name(); // MON
+Day2.MON.label(); // Monday
+
+```
+
+---
+## Enum 값 찾기 
+- name을 이용하여 Enum 클래스 정의 
+```java
+Day2 day = Day2.valueOf("TUE"); 
+
+```
+
+## values()
+- enum 타입의 모든 값들을 배열로 만들어 리턴해주는 메소드 
+```java
+for (Day2 day : Day2.values()) {
+  day.label();
+}
+```
+
+---
 # 소스
 - https://github.com/Around-Hub-Studio/AroundHub_SpringBoot/tree/master
 
