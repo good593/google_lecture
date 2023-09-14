@@ -1,9 +1,11 @@
 package com.example.basic.controller;
 
+import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -26,6 +28,15 @@ public class ControllerBasicGet {
   @GetMapping("/world") //@GetMapping >> GET 요청만 받을 수 있음 
   public String getWorld() {
     return "GetMapping >> Hello world";
+  }
+
+  @GetMapping("/header") 
+  public Map<String, Object> getHeader(@RequestHeader("Referer") String referer,
+    @RequestHeader("User-Agent") String user_agent) {
+    Map<String, Object> map = new HashMap<>();
+    map.put("Referer", referer);
+    map.put("User-Agent", user_agent);
+    return map;
   }
 
   // http://localhost:8080/api/v1/get/variable1/test1
