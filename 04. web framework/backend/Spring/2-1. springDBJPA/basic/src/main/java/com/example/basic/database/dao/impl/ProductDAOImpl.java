@@ -16,7 +16,8 @@ public class ProductDAOImpl implements ProductDAO {
   @Override
   public ProductEntity getProduct(String productId) {
     // TODO Auto-generated method stub
-    ProductEntity productEntity = productRepository.getReferenceById(productId);
+    
+    ProductEntity productEntity = productRepository.getEntityByProductId(productId);
     return productEntity;
   }
 

@@ -6,9 +6,13 @@
 - https://www.youtube.com/watch?v=GIsr_r8XztQ
 
 # 자바 
+- https://www.youtube.com/playlist?list=PLlTylS8uB2fA5PevGI6ARN6v-VQWmqaix
 - https://www.youtube.com/watch?v=ECVWw-ij5Hc&list=PLOSNUO27qFbtjCw-YHcmtfZAkE79HZSOO
 - https://www.youtube.com/watch?v=iN22AgS_Chk
 - https://www.youtube.com/watch?v=kj33guVJuso
+
+# JPA
+- https://www.youtube.com/watch?v=yfElp7_jtog
 
 
 

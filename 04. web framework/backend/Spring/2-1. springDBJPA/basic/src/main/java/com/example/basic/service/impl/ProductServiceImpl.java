@@ -29,7 +29,12 @@ public class ProductServiceImpl implements ProductService {
   @Override
   public ProductDto saveProduct(String productId, String productName, int productPrice, int productStock) {
     // TODO Auto-generated method stub
-    ProductEntity productEntity = new ProductEntity(productId, productName, productPrice, productStock);
+    ProductEntity productEntity = new ProductEntity();
+    productEntity.setProductId(productId);
+    productEntity.setProductName(productName);
+    productEntity.setProductPrice(productPrice);
+    productEntity.setProductStock(productStock);
+
     ProductEntity savedProductEntity = productDAO.saveProduct(productEntity);
 
     ProductDto productDto = new ProductDto(savedProductEntity.getProductId(), savedProductEntity.getProductName()
