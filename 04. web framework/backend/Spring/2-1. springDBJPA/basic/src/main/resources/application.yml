@@ -1,6 +1,13 @@
 # Spring Data Source 설정 
 spring:
 
+  output:
+    ansi:
+      enabled: always 
+  logging:
+    level:
+      '[com.example.basic]': INFO
+
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/examplesdb?userSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul
     username: urstory

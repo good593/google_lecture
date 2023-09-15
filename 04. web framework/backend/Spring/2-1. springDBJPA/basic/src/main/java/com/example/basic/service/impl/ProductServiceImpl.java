@@ -1,5 +1,8 @@
 package com.example.basic.service.impl;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -8,7 +11,9 @@ import com.example.basic.model.dto.ProductDto;
 import com.example.basic.model.entity.ProductEntity;
 import com.example.basic.service.ProductService;
 
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @Service
 public class ProductServiceImpl implements ProductService {
 
@@ -18,29 +23,57 @@ public class ProductServiceImpl implements ProductService {
   @Override
   public ProductDto getProduct(String productId) {
     // TODO Auto-generated method stub
-    ProductEntity productEntity = productDAO.getProduct(productId);
-
-    ProductDto productDto = new ProductDto(productEntity.getProductId(), productEntity.getProductName()
-      , productEntity.getProductPrice(), productEntity.getProductStock());
+    ProductEntity entity = productDAO.getProduct(productId);
+    ProductDto productDto = new ProductDto(
+      entity.getProductId(), entity.getProductName(), entity.getProductPrice(), entity.getProductStock()
+    );
 
     return productDto;
   }
 
   @Override
-  public ProductDto saveProduct(String productId, String productName, int productPrice, int productStock) {
+  public void insertProduct(ProductDto productDto) {
     // TODO Auto-generated method stub
-    ProductEntity productEntity = new ProductEntity();
-    productEntity.setProductId(productId);
-    productEntity.setProductName(productName);
-    productEntity.setProductPrice(productPrice);
-    productEntity.setProductStock(productStock);
+    log.info("insertProduct");
+    ProductEntity product = new ProductEntity();
+    product.setProductId(productDto.getProductId());
+    product.setProductName(productDto.getProductName());
+    product.setProductPrice(productDto.getProductPrice());
+    product.setProductStock(productDto.getProductStock());
+    
+    productDAO.saveProduct(product);
+  }
 
-    ProductEntity savedProductEntity = productDAO.saveProduct(productEntity);
+  @Override
+  public void deleteProduct(String productId) {
+    // TODO Auto-generated method stub
+    productDAO.deleteProduct(productId);
+  }
 
-    ProductDto productDto = new ProductDto(savedProductEntity.getProductId(), savedProductEntity.getProductName()
-      , savedProductEntity.getProductPrice(), savedProductEntity.getProductStock());
+  @Override
+  public List<ProductDto> selectAllProducts() {
+    // TODO Auto-generated method stub
+    List<ProductDto> productList = new ArrayList<ProductDto>();
+    List<ProductEntity> productEntities = productDAO.selectAllProducts();
 
-    return productDto;
+    for (ProductEntity entity : productEntities) {
+      productList.add(new ProductDto(entity.getProductId(), entity.getProductName(), entity.getProductPrice(), entity.getProductStock()));
+    }
+
+    return productList;
+  }
+
+  @Override
+  public void updateProduct(ProductDto productDto) {
+    // TODO Auto-generated method stub
+
+    ProductEntity product = new ProductEntity();
+    product.setProductId(productDto.getProductId());
+    product.setProductName(productDto.getProductName());
+    product.setProductPrice(productDto.getProductPrice());
+    product.setProductStock(productDto.getProductStock());
+
+    productDAO.updateProduct(product);
   }
   
 }
