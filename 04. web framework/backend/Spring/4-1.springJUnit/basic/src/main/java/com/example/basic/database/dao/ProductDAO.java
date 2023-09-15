@@ -2,7 +2,6 @@ package com.example.basic.database.dao;
 
 import java.util.List;
 
-import com.example.basic.model.dto.ProductDto;
 import com.example.basic.model.entity.ProductEntity;
 
 
