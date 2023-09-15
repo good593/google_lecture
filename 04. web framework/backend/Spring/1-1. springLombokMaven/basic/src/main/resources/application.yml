@@ -1,11 +1,16 @@
-
-# Spring Data Source 설정 
 spring:
+  output:
+    ansi:
+      enabled: always 
 
-  datasource:
-    url: jdbc:mysql://127.0.0.1:3306/examplesdb?userSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul
-    username: urstory
-    password: u1234
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
+logging:
+  file:
+    name: log/application-debug.log
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    org.springframework.web: DEBUG
+    com.example.basic: DEBUG
+    org.hibernate: ERROR
 

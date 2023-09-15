@@ -14,9 +14,21 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.basic.data.dto.BasicDto;
 import com.example.basic.data.dto.BasicLombokDto;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @RestController
 @RequestMapping("/api/v1/get") //@RequestMapping >> GET, POST, PUT 등 모든 HTTP method 요청을 받음
 public class ControllerBasicGet {
+
+  @GetMapping("/logging")
+  public void doLogging() {
+    log.trace("추적 레벨은 Debug보다 좀더 상세한 정보를 나타냄");
+    log.debug("프로그램을 디버깅하기 위한 정보 지정");
+    log.info("상태변경과 같은 정보성 메시지를 나타냄");
+    log.warn("처리 가능한 문제, 향후 시스템 에러의 원인이 될 수 있는 경고성 메시지를 나타냄");
+    log.error("요청을 처리하는 중 문제가 발생한 경우");
+  }
   
   // http://localhost:8080/api/v1/hello/test
   @RequestMapping(value = "/test", method = RequestMethod.GET)
