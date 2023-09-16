@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>checkbox</title>
+</head>
+<body>
+    <!-- form name 값이 같으면 자동으로 배열로 전송된다.
+
+          th:checked 값이 false 이면 checked 속성 자체를 제거.
+          th:checked 값이 true 이면 checked 속성 설정
+    -->
+    <h3 th:text=" '선택한 food List : ' +${foodList}"></h3>
+
+    <form action="/checkbox" method="POST">
+        지금 먹고 싶은 것은? <br>
+
+        <th:block th:if="${foodList} == null">
+            <input type="checkbox" name="food" value="pizza" th:checked="false"> 피자 <br>
+            <input type="checkbox" name="food" value="coffee" th:checked="false"> 커피 <br>
+            <input type="checkbox" name="food" value="pasta" th:checked="false"> 파스타 <br>
+        </th:block>
+        <th:block th:if="${foodList} != null">
+            <input type="checkbox" name="food" value="pizza" th:checked="${#strings.contains(foodList, 'pizza')}"> 피자 <br>
+            <input type="checkbox" name="food" value="coffee" th:checked="${#strings.contains(foodList, 'coffee')}"> 커피 <br>
+            <input type="checkbox" name="food" value="pasta" th:checked="${#strings.contains(foodList, 'pasta')}"> 파스타 <br>
+        </th:block>
+
+        <br>
+        <input type="submit" value="send">
+    </form>
+
+    <h3>result</h3>
+    <table border="1">
+        <tr th:each="foodItem, idx :  ${foodList}">
+            <td th:text="${idx.index}"></td>
+            <td th:text="${foodItem}"></td>
+        </tr>
+    </table>
+</body>
+</html>
+

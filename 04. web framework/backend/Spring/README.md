@@ -9,3 +9,14 @@
 # Springboot Security
 - https://www.youtube.com/watch?v=GEv_hw0VOxE
 
+# logging
+- @Slf4j
+
+# 단축키
+
+- Override 단축키
+  - Ctr + .
+
+- 자동 import 단축키 
+  - Alt + Shift + o
+

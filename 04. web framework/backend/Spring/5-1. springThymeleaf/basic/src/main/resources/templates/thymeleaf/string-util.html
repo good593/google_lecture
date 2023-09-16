@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+  #string.equals()  : 같은지 비교, 띄어쓰기, 대/소문자 일치.
+  th:if 사용 시      : 조건이 참이면 출력.
+  th:text 사용 시    : true / false 로 결과를 반환
+  th:unless         : Not if
+  #string.isEmpty() : 전달된 변수에 값이 비었는지 체크
+  #string.contains(): 전달된 변수에 특정 문자열이 포함되었는지를 체크.
+ -->
+    <h1 th:if="${#strings.equals(msg, 'Hello world')}">msg 가 'Hello World' 면 이 메시지가 출력됩니다.</h1>
+    <h1 th:text="${#strings.equals(msg, 'Hello world')}">msg 가 'Hello World' 면 true 가 출력됩니다.</h1>
+    <h1 th:if="${#strings.isEmpty(msg)}">if 조건이 참이면(msg 가 비어 있으면) 이 메시지가 출력됩니다.</h1>
+    <h1 th:unless="${#strings.isEmpty(msg)}">msg 가 비어 있지 않으면, 즉 있으면 출력됩니다.</h1>
+    <h1 th:text="${#strings.isEmpty(msg)}">msg 변수가 비었으면 true 아니면 false</h1>
+    <h1 th:text="${#strings.contains(msg, 'Hello')}"> msg 변수에 Hello 문자열이 포함되었으면 true 아니면 false</h1>
+
+
+
+</body>
+</html>
+
