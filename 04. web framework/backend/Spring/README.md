@@ -7,7 +7,7 @@
 - https://www.youtube.com/watch?v=XfWn-L-lgDg
 
 # Springboot Security
-- https://www.youtube.com/watch?v=GEv_hw0VOxE
+- https://www.youtube.com/watch?v=GEv_hw0VOxE&list=PL93mKxaRDidERCyMaobSLkvSPzYtIk0Ah
 
 # logging
 - @Slf4j

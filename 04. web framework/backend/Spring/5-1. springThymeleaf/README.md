@@ -59,7 +59,7 @@ spring:
 
 ---
 ## 자주 사용하는 타임리프 문법 
-![Alt text](image.png)
+![Alt text](./img/image.png)
 
 ---
 - 타임리프에서 a태그를 작성할 때 예제들 

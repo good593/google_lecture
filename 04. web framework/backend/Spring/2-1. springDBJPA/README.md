@@ -130,6 +130,67 @@ spring:
 
 ![Alt text](./img/image-3.png)
 
+---
+### [JPA Query Method](https://velog.io/@seongwon97/Spring-Boot-Query-Method)
+스프링 데이터 JPA는 메소드 이름으로 쿼리 생성을 하는 쿼리 메소드 기능을 제공하는데
+- 쿼리 메서드는 메서드의 이름을 분석해서 JPQL 쿼리를 실행한다.
+- 쿼리 메서드를 활용하면 쉽게 쿼리문을 만들어 사용할 수 있다. 
+
+---
+#### Select
+```java
+    User findByEmail(String email);
+    User getByEmail(String email);
+    User readByEmail(String email);
+    User queryByEmail(String email);
+    User searchByEmail(String email);
+    User streamByEmail(String email);
+    User findUserByEmail(String email);
+```
+
+---
+#### And, Or 
+```java
+    List<User> findByNameAndEmail(String name, String email);
+    List<User> findByNameOrEmail(String name, String email);
+```
+
+#### is(Not)Empty, is(Not)Null
+```java
+    List<User> findByIdIsNotNull();  // Id값에 Null값이 없는지?
+    List<User> findByAddressIsNotEmpty();
+```
+
+---
+#### in 
+```java
+ List<User> findByNameIn(List<String> name);
+```
+#### StringWith/EndingWith/Contains 
+```java
+    List<User> findByNameStartingWith(String name);
+    List<User> findByNameEndingWith(String name);
+    List<User> findByNameContains(String name);
+    List<User> findByNameLike(String name);
+```
+
+---
+#### Is, Equals 
+```java
+    Set<User> findUserByNameIs(String name);
+    Set<User> findUserByName(String name);
+    Set<User> findUserByNameEquals(String name);
+```
+#### Sorting
+```java
+    List<User> findTop1ByNameOrderByIdDesc(String name); 
+    // Id로 내림차순으로 정렬 후 입력 name과 같은 것의 맨 위의 있는 값을 뽑아온다.
+    
+    List<User> findFirst2ByNameOrderByIdDescEmailAsc(String name);
+    // 여러개의 조건으로 find하는 경우는 And를 사용하였으나 정렬 조건으로 여러개의 값을 사용하는 경우는 And를 사용하지 않고 조건을 이어서 붙인다.
+
+    List<User> findFirstByName(String name, Sort sort);
+```
 
 ---
 # 소스

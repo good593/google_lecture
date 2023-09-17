@@ -1,0 +1,35 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+
+  output:
+    ansi:
+      enabled: always 
+
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/examplesdb?userSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul
+    username: urstory
+    password: u1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # mvc:
+  #   view:
+  #     prefix: /templates/
+  #     suffix: .mustache
+
+  jpa:
+    hibernate:
+      ddl-auto: update #create update none
+    properties:
+      hibernate:
+        show_sql: true 
+        format_sql: true 
+
+        

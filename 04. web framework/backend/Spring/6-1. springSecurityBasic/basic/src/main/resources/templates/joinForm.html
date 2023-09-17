@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입 페이지</title>
+</head>
+<body>
+  <h1>회원가입 페이지</h1>
+  <hr>
+  <form action="/join" method="post">
+    <input type="text" name="username" placeholder="User Name" />
+    <br />
+    <input type="password" name="password" placeholder="Password"/>
+    <br />
+    <input type="email" name="email" placeholder="Email"/>
+    <br />
+    <input type="submit" name="회원가입"/>
+  </form>
+  <a href="/loginForm">이미 회원가입을 하셨나요?</a>
+</body>
+</html>
