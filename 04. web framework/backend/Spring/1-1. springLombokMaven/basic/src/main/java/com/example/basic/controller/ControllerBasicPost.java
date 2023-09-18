@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.basic.data.dto.BasicDto;
-import com.example.basic.data.dto.BasicLombokDto;
+import com.example.basic.model.dto.BasicDto;
+import com.example.basic.model.dto.BasicLombokDto;
 
 @RestController
 @RequestMapping("/api/v1/post")

@@ -1,0 +1,760 @@
+"2023-09-18 12:12:14,839 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 91887 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:12:14,842 DEBUG [restartedMain] com.example.basic.BasicApplication : Running with Spring Boot v3.1.3, Spring v6.0.11
+""2023-09-18 12:12:14,843 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:12:14,869 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2023-09-18 12:12:14,869 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2023-09-18 12:12:15,298 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:12:15,303 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:12:15,303 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:12:15,334 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:12:15,334 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 465 ms
+""2023-09-18 12:12:15,430 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2023-09-18 12:12:15,472 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+""2023-09-18 12:12:15,480 DEBUG [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2023-09-18 12:12:15,484 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2023-09-18 12:12:15,511 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:12:15,528 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:12:15,533 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.883 seconds (process running for 1.227)
+""2023-09-18 12:12:41,137 INFO  [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2023-09-18 12:12:41,137 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+""2023-09-18 12:12:41,137 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Detected StandardServletMultipartResolver
+""2023-09-18 12:12:41,137 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Detected AcceptHeaderLocaleResolver
+""2023-09-18 12:12:41,137 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Detected FixedThemeResolver
+""2023-09-18 12:12:41,139 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7096c57
+""2023-09-18 12:12:41,139 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2e5c8aef
+""2023-09-18 12:12:41,139 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+""2023-09-18 12:12:41,139 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 2 ms
+""2023-09-18 12:12:41,143 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : GET "/user", parameters={}
+""2023-09-18 12:12:41,148 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+""2023-09-18 12:12:41,152 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.resource.ResourceHttpRequestHandler : Resource not found
+""2023-09-18 12:12:41,152 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed 404 NOT_FOUND
+""2023-09-18 12:12:41,155 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : "ERROR" dispatch for GET "/error", parameters={}
+""2023-09-18 12:12:41,157 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+""2023-09-18 12:12:41,172 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.view.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+""2023-09-18 12:12:41,175 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Exiting from "ERROR" dispatch, status 404
+""2023-09-18 12:12:45,356 DEBUG [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet : GET "/user/v1/", parameters={}
+""2023-09-18 12:12:45,361 DEBUG [http-nio-8080-exec-2] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped to com.example.basic.controller.UserController#index()
+""2023-09-18 12:12:45,362 INFO  [http-nio-8080-exec-2] com.example.basic.controller.UserController : index start!!
+""2023-09-18 12:12:45,369 DEBUG [http-nio-8080-exec-2] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/plain, */*, application/json, application/*+json]
+""2023-09-18 12:12:45,370 DEBUG [http-nio-8080-exec-2] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Writing ["GetMapping >> Hello world"]
+""2023-09-18 12:12:45,371 DEBUG [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet : Completed 200 OK
+""2023-09-18 12:13:11,501 DEBUG [http-nio-8080-exec-3] org.springframework.web.servlet.DispatcherServlet : GET "/user/v1/variable/ttt", parameters={}
+""2023-09-18 12:13:11,509 DEBUG [http-nio-8080-exec-3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped to com.example.basic.controller.UserController#getVariable(String)
+""2023-09-18 12:13:11,520 WARN  [http-nio-8080-exec-3] org.springframework.core.LocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.example.basic.controller.UserController
+""2023-09-18 12:13:11,524 DEBUG [http-nio-8080-exec-3] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/plain, */*, application/json, application/*+json]
+""2023-09-18 12:13:11,524 DEBUG [http-nio-8080-exec-3] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Writing ["GetMapping >> param1: ttt"]
+""2023-09-18 12:13:11,524 DEBUG [http-nio-8080-exec-3] org.springframework.web.servlet.DispatcherServlet : Completed 200 OK
+""2023-09-18 12:13:41,645 DEBUG [http-nio-8080-exec-4] org.springframework.web.servlet.DispatcherServlet : GET "/user/v1/variable/dto?name=name1&email=sample@gmail.com", parameters={masked}
+""2023-09-18 12:13:41,651 DEBUG [http-nio-8080-exec-4] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped to com.example.basic.controller.UserController#getVariableDto(UserDto)
+""2023-09-18 12:13:41,665 DEBUG [http-nio-8080-exec-4] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/plain, */*, application/json, application/*+json]
+""2023-09-18 12:13:41,665 DEBUG [http-nio-8080-exec-4] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Writing ["GetMapping >> UserDto(name=name1, email=sample@gmail.com)"]
+""2023-09-18 12:13:41,666 DEBUG [http-nio-8080-exec-4] org.springframework.web.servlet.DispatcherServlet : Completed 200 OK
+""2023-09-18 12:13:52,829 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+""2023-09-18 12:13:52,843 INFO  [Thread-5] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:13:52,845 INFO  [Thread-5] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Destroying Spring FrameworkServlet 'dispatcherServlet'
+""2023-09-18 12:13:52,899 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 91887 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:13:52,899 DEBUG [restartedMain] com.example.basic.BasicApplication : Running with Spring Boot v3.1.3, Spring v6.0.11
+""2023-09-18 12:13:52,899 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:13:52,994 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:13:52,995 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:13:52,995 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:13:53,000 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:13:53,000 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 99 ms
+""2023-09-18 12:13:53,005 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main/com/example/basic/controller/UserController.class]: Failed to instantiate [com.example.basic.controller.UserController]: Constructor threw exception
+""2023-09-18 12:13:53,005 INFO  [restartedMain] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:13:53,008 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+""2023-09-18 12:13:53,019 ERROR [restartedMain] org.springframework.boot.SpringApplication : Application run failed
+"org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main/com/example/basic/controller/UserController.class]: Failed to instantiate [com.example.basic.controller.UserController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1314) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1199) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.3.jar:3.1.3]
+	at com.example.basic.BasicApplication.main(BasicApplication.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.1.3.jar:3.1.3]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.basic.controller.UserController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "/", delete this token
+
+	at com.example.basic.controller.UserController.<init>(UserController.java:30) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:198) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 24 common frames omitted
+"2023-09-18 12:13:55,481 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 91887 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:13:55,481 DEBUG [restartedMain] com.example.basic.BasicApplication : Running with Spring Boot v3.1.3, Spring v6.0.11
+""2023-09-18 12:13:55,481 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:13:55,553 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:13:55,554 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:13:55,554 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:13:55,559 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:13:55,559 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 76 ms
+""2023-09-18 12:13:55,575 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2023-09-18 12:13:55,580 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+""2023-09-18 12:13:55,582 DEBUG [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2023-09-18 12:13:55,583 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2023-09-18 12:13:55,589 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:13:55,593 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:13:55,595 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.134 seconds (process running for 101.288)
+""2023-09-18 12:13:55,595 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+""2023-09-18 12:14:07,095 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+""2023-09-18 12:14:07,097 INFO  [Thread-7] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:14:07,132 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 91887 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:14:07,132 DEBUG [restartedMain] com.example.basic.BasicApplication : Running with Spring Boot v3.1.3, Spring v6.0.11
+""2023-09-18 12:14:07,132 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:14:07,192 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:14:07,192 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:14:07,192 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:14:07,198 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:14:07,198 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 65 ms
+""2023-09-18 12:14:07,212 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2023-09-18 12:14:07,218 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+""2023-09-18 12:14:07,219 DEBUG [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2023-09-18 12:14:07,220 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2023-09-18 12:14:07,225 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:14:07,228 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:14:07,229 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.107 seconds (process running for 112.923)
+""2023-09-18 12:14:07,230 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+""2023-09-18 12:14:12,673 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+""2023-09-18 12:14:12,676 INFO  [Thread-14] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:14:12,713 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 91887 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:14:12,713 DEBUG [restartedMain] com.example.basic.BasicApplication : Running with Spring Boot v3.1.3, Spring v6.0.11
+""2023-09-18 12:14:12,713 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:14:12,773 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:14:12,774 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:14:12,774 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:14:12,780 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:14:12,780 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 66 ms
+""2023-09-18 12:14:12,794 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2023-09-18 12:14:12,798 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+""2023-09-18 12:14:12,799 DEBUG [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2023-09-18 12:14:12,800 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2023-09-18 12:14:12,805 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:14:12,808 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:14:12,809 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.106 seconds (process running for 118.503)
+""2023-09-18 12:14:12,810 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+""2023-09-18 12:14:19,266 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+""2023-09-18 12:14:19,271 INFO  [Thread-18] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:14:19,317 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 91887 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:14:19,317 DEBUG [restartedMain] com.example.basic.BasicApplication : Running with Spring Boot v3.1.3, Spring v6.0.11
+""2023-09-18 12:14:19,317 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:14:19,371 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:14:19,372 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:14:19,372 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:14:19,378 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:14:19,378 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 60 ms
+""2023-09-18 12:14:19,392 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2023-09-18 12:14:19,397 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+""2023-09-18 12:14:19,398 DEBUG [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2023-09-18 12:14:19,399 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2023-09-18 12:14:19,403 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:14:19,407 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:14:19,408 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.102 seconds (process running for 125.102)
+""2023-09-18 12:14:19,408 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+""2023-09-18 12:14:24,852 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+""2023-09-18 12:14:24,854 INFO  [Thread-22] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:14:24,893 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 91887 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:14:24,893 DEBUG [restartedMain] com.example.basic.BasicApplication : Running with Spring Boot v3.1.3, Spring v6.0.11
+""2023-09-18 12:14:24,893 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:14:24,947 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:14:24,948 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:14:24,948 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:14:24,953 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:14:24,953 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 59 ms
+""2023-09-18 12:14:24,966 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2023-09-18 12:14:24,970 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+""2023-09-18 12:14:24,971 DEBUG [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2023-09-18 12:14:24,972 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2023-09-18 12:14:24,976 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:14:24,979 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:14:24,981 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.097 seconds (process running for 130.674)
+""2023-09-18 12:14:24,981 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+""2023-09-18 12:14:28,410 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+""2023-09-18 12:14:28,414 INFO  [Thread-26] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:14:28,454 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 91887 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:14:28,454 DEBUG [restartedMain] com.example.basic.BasicApplication : Running with Spring Boot v3.1.3, Spring v6.0.11
+""2023-09-18 12:14:28,455 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:14:28,517 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:14:28,517 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:14:28,517 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:14:28,523 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:14:28,523 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 67 ms
+""2023-09-18 12:14:28,534 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2023-09-18 12:14:28,537 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+""2023-09-18 12:14:28,538 DEBUG [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2023-09-18 12:14:28,538 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2023-09-18 12:14:28,542 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:14:28,545 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:14:28,546 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.102 seconds (process running for 134.24)
+""2023-09-18 12:14:28,546 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+""2023-09-18 12:14:37,019 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+""2023-09-18 12:14:37,022 INFO  [Thread-30] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:14:37,056 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 91887 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:14:37,057 DEBUG [restartedMain] com.example.basic.BasicApplication : Running with Spring Boot v3.1.3, Spring v6.0.11
+""2023-09-18 12:14:37,057 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:14:37,110 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:14:37,110 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:14:37,110 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:14:37,115 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:14:37,115 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 58 ms
+""2023-09-18 12:14:37,125 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2023-09-18 12:14:37,129 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+""2023-09-18 12:14:37,130 DEBUG [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2023-09-18 12:14:37,130 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2023-09-18 12:14:37,134 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:14:37,137 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:14:37,138 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.091 seconds (process running for 142.832)
+""2023-09-18 12:14:37,139 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+""2023-09-18 12:14:38,548 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+""2023-09-18 12:14:38,550 INFO  [Thread-34] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:14:38,588 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 91887 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:14:38,588 DEBUG [restartedMain] com.example.basic.BasicApplication : Running with Spring Boot v3.1.3, Spring v6.0.11
+""2023-09-18 12:14:38,588 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:14:38,639 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:14:38,640 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:14:38,640 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:14:38,646 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:14:38,646 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 57 ms
+""2023-09-18 12:14:38,656 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2023-09-18 12:14:38,660 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+""2023-09-18 12:14:38,661 DEBUG [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2023-09-18 12:14:38,662 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2023-09-18 12:14:38,666 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:14:38,669 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:14:38,670 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.091 seconds (process running for 144.364)
+""2023-09-18 12:14:38,670 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+""2023-09-18 12:14:53,192 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+""2023-09-18 12:14:53,198 INFO  [Thread-38] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:14:53,239 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 91887 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:14:53,239 DEBUG [restartedMain] com.example.basic.BasicApplication : Running with Spring Boot v3.1.3, Spring v6.0.11
+""2023-09-18 12:14:53,239 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:14:53,298 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:14:53,298 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:14:53,298 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:14:53,302 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:14:53,302 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 62 ms
+""2023-09-18 12:14:53,313 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2023-09-18 12:14:53,317 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+""2023-09-18 12:14:53,318 DEBUG [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2023-09-18 12:14:53,319 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2023-09-18 12:14:53,322 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:14:53,325 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:14:53,326 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.095 seconds (process running for 159.02)
+""2023-09-18 12:14:53,326 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+""2023-09-18 12:14:55,743 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+""2023-09-18 12:14:55,744 INFO  [Thread-42] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:14:55,776 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 91887 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:14:55,776 DEBUG [restartedMain] com.example.basic.BasicApplication : Running with Spring Boot v3.1.3, Spring v6.0.11
+""2023-09-18 12:14:55,776 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:14:55,828 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:14:55,828 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:14:55,828 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:14:55,832 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:14:55,832 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 55 ms
+""2023-09-18 12:14:55,846 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2023-09-18 12:14:55,849 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+""2023-09-18 12:14:55,850 DEBUG [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2023-09-18 12:14:55,851 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2023-09-18 12:14:55,854 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:14:55,856 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:14:55,857 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.088 seconds (process running for 161.551)
+""2023-09-18 12:14:55,857 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+""2023-09-18 12:15:00,288 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+""2023-09-18 12:15:00,290 INFO  [Thread-46] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:15:00,322 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 91887 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:15:00,322 DEBUG [restartedMain] com.example.basic.BasicApplication : Running with Spring Boot v3.1.3, Spring v6.0.11
+""2023-09-18 12:15:00,322 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:15:00,372 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:15:00,373 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:15:00,373 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:15:00,377 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:15:00,377 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 54 ms
+""2023-09-18 12:15:00,392 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2023-09-18 12:15:00,395 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+""2023-09-18 12:15:00,396 DEBUG [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2023-09-18 12:15:00,397 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2023-09-18 12:15:00,401 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:15:00,403 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:15:00,404 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.089 seconds (process running for 166.098)
+""2023-09-18 12:15:00,404 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+""2023-09-18 12:15:04,233 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+""2023-09-18 12:15:04,235 INFO  [Thread-50] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:15:04,269 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 91887 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:15:04,269 DEBUG [restartedMain] com.example.basic.BasicApplication : Running with Spring Boot v3.1.3, Spring v6.0.11
+""2023-09-18 12:15:04,269 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:15:04,317 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:15:04,317 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:15:04,317 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:15:04,321 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:15:04,321 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 51 ms
+""2023-09-18 12:15:04,332 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2023-09-18 12:15:04,335 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+""2023-09-18 12:15:04,336 DEBUG [restartedMain] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2023-09-18 12:15:04,336 DEBUG [restartedMain] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2023-09-18 12:15:04,339 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:15:04,342 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:15:04,343 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.081 seconds (process running for 170.037)
+""2023-09-18 12:15:04,343 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+""2023-09-18 12:15:08,472 INFO  [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2023-09-18 12:15:08,473 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+""2023-09-18 12:15:08,473 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Detected StandardServletMultipartResolver
+""2023-09-18 12:15:08,473 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Detected AcceptHeaderLocaleResolver
+""2023-09-18 12:15:08,473 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Detected FixedThemeResolver
+""2023-09-18 12:15:08,476 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2e20701c
+""2023-09-18 12:15:08,476 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.support.SessionFlashMapManager@20e78ba8
+""2023-09-18 12:15:08,476 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+""2023-09-18 12:15:08,476 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 3 ms
+""2023-09-18 12:15:08,478 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : GET "/user/v1/", parameters={}
+""2023-09-18 12:15:08,480 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped to com.example.basic.controller.UserController#index()
+""2023-09-18 12:15:08,481 INFO  [http-nio-8080-exec-1] com.example.basic.controller.UserController : index start!!
+""2023-09-18 12:15:08,487 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/plain, */*, application/json, application/*+json]
+""2023-09-18 12:15:08,487 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Writing ["GetMapping >> Hello world"]
+""2023-09-18 12:15:08,488 DEBUG [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed 200 OK
+""2023-09-18 12:15:16,836 DEBUG [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet : GET "/user/v1/variable/test", parameters={}
+""2023-09-18 12:15:16,841 DEBUG [http-nio-8080-exec-2] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped to com.example.basic.controller.UserController#getVariable(String)
+""2023-09-18 12:15:16,847 WARN  [http-nio-8080-exec-2] org.springframework.core.LocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.example.basic.controller.UserController
+""2023-09-18 12:15:16,848 DEBUG [http-nio-8080-exec-2] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/plain, */*, application/json, application/*+json]
+""2023-09-18 12:15:16,848 DEBUG [http-nio-8080-exec-2] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Writing ["GetMapping >> param1: test"]
+""2023-09-18 12:15:16,848 DEBUG [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet : Completed 200 OK
+""2023-09-18 12:30:07,198 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 94915 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:30:07,199 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:30:07,231 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2023-09-18 12:30:07,231 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2023-09-18 12:30:07,676 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:30:07,681 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:30:07,681 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:30:07,713 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:30:07,713 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 481 ms
+""2023-09-18 12:30:07,874 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:30:07,890 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:30:07,896 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.891 seconds (process running for 1.329)
+""2023-09-18 12:30:35,887 INFO  [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2023-09-18 12:30:35,888 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+""2023-09-18 12:30:35,888 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 0 ms
+""2023-09-18 12:30:35,902 INFO  [http-nio-8080-exec-1] com.example.basic.controller.UserController : index start!!
+""2023-09-18 12:30:54,103 WARN  [http-nio-8080-exec-2] org.springframework.core.LocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.example.basic.controller.UserController
+""2023-09-18 12:37:32,459 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 96821 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:37:32,462 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:37:32,484 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2023-09-18 12:37:32,484 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2023-09-18 12:37:32,915 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:37:32,921 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:37:32,921 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:37:32,954 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:37:32,954 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 469 ms
+""2023-09-18 12:37:33,135 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:37:33,152 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:37:33,158 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.881 seconds (process running for 1.35)
+""2023-09-18 12:37:48,282 INFO  [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2023-09-18 12:37:48,283 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+""2023-09-18 12:37:48,284 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 1 ms
+""2023-09-18 12:37:48,303 WARN  [http-nio-8080-exec-1] org.springframework.core.LocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.example.basic.controller.UserController
+""2023-09-18 12:42:23,951 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 7 class path changes (0 additions, 0 deletions, 7 modifications)
+""2023-09-18 12:42:23,972 INFO  [Thread-5] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:42:23,973 INFO  [Thread-5] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Destroying Spring FrameworkServlet 'dispatcherServlet'
+""2023-09-18 12:42:24,018 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 96821 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:42:24,019 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:42:24,103 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:42:24,104 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:42:24,105 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:42:24,111 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:42:24,112 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 92 ms
+""2023-09-18 12:42:24,147 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:42:24,151 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:42:24,153 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.148 seconds (process running for 292.344)
+""2023-09-18 12:42:24,153 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+""2023-09-18 12:42:44,775 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+""2023-09-18 12:42:44,777 INFO  [Thread-7] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:42:44,810 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 96821 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:42:44,810 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:42:44,887 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:42:44,887 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:42:44,887 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:42:44,891 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:42:44,892 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 81 ms
+""2023-09-18 12:42:44,918 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:42:44,922 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:42:44,923 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.123 seconds (process running for 313.114)
+""2023-09-18 12:42:44,924 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+""2023-09-18 12:48:54,767 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 99811 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:48:54,769 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:48:54,791 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2023-09-18 12:48:54,791 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2023-09-18 12:48:55,256 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:48:55,260 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:48:55,260 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:48:55,289 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:48:55,289 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 498 ms
+""2023-09-18 12:48:55,299 INFO  [restartedMain] org.apache.catalina.core.StandardContext : Suspicious URL pattern: [/message/**] in context [], see sections 12.1 and 12.2 of the Servlet specification
+""2023-09-18 12:48:55,458 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:48:55,475 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:48:55,480 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.906 seconds (process running for 1.232)
+""2023-09-18 12:49:13,241 INFO  [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2023-09-18 12:49:13,241 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+""2023-09-18 12:49:13,242 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 1 ms
+""2023-09-18 12:49:34,231 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+""2023-09-18 12:49:34,240 INFO  [Thread-5] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:49:34,241 INFO  [Thread-5] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Destroying Spring FrameworkServlet 'dispatcherServlet'
+""2023-09-18 12:49:34,282 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 99811 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:49:34,283 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:49:34,392 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:49:34,393 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:49:34,393 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:49:34,399 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:49:34,399 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 115 ms
+""2023-09-18 12:49:34,402 INFO  [restartedMain] org.apache.catalina.core.StandardContext : Suspicious URL pattern: [/message/**] in context [], see sections 12.1 and 12.2 of the Servlet specification
+""2023-09-18 12:49:34,432 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:49:34,437 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:49:34,438 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.167 seconds (process running for 40.189)
+""2023-09-18 12:49:34,439 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+""2023-09-18 12:49:36,850 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+""2023-09-18 12:49:36,853 INFO  [Thread-7] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:49:36,888 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 99811 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:49:36,888 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:49:36,959 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:49:36,959 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:49:36,960 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:49:36,964 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:49:36,964 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 75 ms
+""2023-09-18 12:49:36,966 INFO  [restartedMain] org.apache.catalina.core.StandardContext : Suspicious URL pattern: [/message/**] in context [], see sections 12.1 and 12.2 of the Servlet specification
+""2023-09-18 12:49:36,995 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:49:36,999 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:49:37,000 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.123 seconds (process running for 42.751)
+""2023-09-18 12:49:37,000 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+""2023-09-18 12:49:47,706 INFO  [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2023-09-18 12:49:47,706 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+""2023-09-18 12:49:47,708 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 1 ms
+""2023-09-18 12:49:47,713 INFO  [http-nio-8080-exec-1] com.example.basic.controller.UserController : index start!!
+""2023-09-18 12:50:21,967 INFO  [http-nio-8080-exec-3] com.example.basic.controller.UserController : index start!!
+""2023-09-18 12:51:09,502 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 924 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:51:09,503 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:51:09,526 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2023-09-18 12:51:09,526 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2023-09-18 12:51:09,985 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:51:09,990 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:51:09,990 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:51:10,022 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:51:10,022 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 495 ms
+""2023-09-18 12:51:10,031 INFO  [restartedMain] org.apache.catalina.core.StandardContext : Suspicious URL pattern: [/message/**] in context [], see sections 12.1 and 12.2 of the Servlet specification
+""2023-09-18 12:51:10,197 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:51:10,214 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:51:10,219 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.908 seconds (process running for 1.445)
+""2023-09-18 12:52:00,127 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+""2023-09-18 12:52:00,135 INFO  [Thread-5] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:52:00,175 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 924 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:52:00,176 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:52:00,269 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:52:00,270 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:52:00,270 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:52:00,275 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:52:00,275 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 98 ms
+""2023-09-18 12:52:00,277 ERROR [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatStarter : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'messageFilterRegistrationBean' defined in class path resource [com/example/basic/config/FilterConfig.class]: Failed to instantiate [org.springframework.boot.web.servlet.FilterRegistrationBean]: Factory method 'messageFilterRegistrationBean' threw exception with message: Unresolved compilation problem: 
+	Syntax error on token "@", Identifier expected after this token
+
+""2023-09-18 12:52:00,277 INFO  [restartedMain] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:52:00,278 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+""2023-09-18 12:52:00,280 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+""2023-09-18 12:52:00,288 ERROR [restartedMain] org.springframework.boot.SpringApplication : Application run failed
+"org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:602) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.3.jar:3.1.3]
+	at com.example.basic.BasicApplication.main(BasicApplication.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.1.3.jar:3.1.3]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:489) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:211) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:183) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:161) ~[spring-boot-3.1.3.jar:3.1.3]
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'messageFilterRegistrationBean' defined in class path resource [com/example/basic/config/FilterConfig.class]: Failed to instantiate [org.springframework.boot.web.servlet.FilterRegistrationBean]: Factory method 'messageFilterRegistrationBean' threw exception with message: Unresolved compilation problem: 
+	Syntax error on token "@", Identifier expected after this token
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:659) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:493) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:210) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:201) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:96) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:85) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:235) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4886) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1328) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1318) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(Unknown Source) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:846) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1328) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1318) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(Unknown Source) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:241) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:428) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:918) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:485) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-3.1.3.jar:3.1.3]
+	... 18 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.FilterRegistrationBean]: Factory method 'messageFilterRegistrationBean' threw exception with message: Unresolved compilation problem: 
+	Syntax error on token "@", Identifier expected after this token
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 58 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "@", Identifier expected after this token
+
+	at com.example.basic.filter.MessageFilter.<init>(MessageFilter.java:13) ~[main/:na]
+	at com.example.basic.config.FilterConfig.messageFilterRegistrationBean(FilterConfig.java:16) ~[main/:na]
+	at com.example.basic.config.FilterConfig$$SpringCGLIB$$0.CGLIB$messageFilterRegistrationBean$0(<generated>) ~[main/:na]
+	at com.example.basic.config.FilterConfig$$SpringCGLIB$$2.invoke(<generated>) ~[main/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.0.11.jar:6.0.11]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-6.0.11.jar:6.0.11]
+	at com.example.basic.config.FilterConfig$$SpringCGLIB$$0.messageFilterRegistrationBean(<generated>) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 59 common frames omitted
+"2023-09-18 12:52:01,721 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 924 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:52:01,721 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:52:01,792 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:52:01,792 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:52:01,793 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:52:01,797 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:52:01,797 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 75 ms
+""2023-09-18 12:52:01,798 ERROR [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatStarter : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'messageFilterRegistrationBean' defined in class path resource [com/example/basic/config/FilterConfig.class]: Failed to instantiate [org.springframework.boot.web.servlet.FilterRegistrationBean]: Factory method 'messageFilterRegistrationBean' threw exception with message: Unresolved compilation problem: 
+	Com cannot be resolved to a type
+
+""2023-09-18 12:52:01,799 INFO  [restartedMain] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:52:01,800 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+""2023-09-18 12:52:01,801 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+""2023-09-18 12:52:01,803 ERROR [restartedMain] org.springframework.boot.SpringApplication : Application run failed
+"org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:602) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.3.jar:3.1.3]
+	at com.example.basic.BasicApplication.main(BasicApplication.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.1.3.jar:3.1.3]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:489) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:211) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:183) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:161) ~[spring-boot-3.1.3.jar:3.1.3]
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'messageFilterRegistrationBean' defined in class path resource [com/example/basic/config/FilterConfig.class]: Failed to instantiate [org.springframework.boot.web.servlet.FilterRegistrationBean]: Factory method 'messageFilterRegistrationBean' threw exception with message: Unresolved compilation problem: 
+	Com cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:659) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:493) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:210) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:201) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:96) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:85) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:235) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52) ~[spring-boot-3.1.3.jar:3.1.3]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4886) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1328) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1318) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(Unknown Source) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:846) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1328) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1318) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(Unknown Source) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:241) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:428) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:918) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:485) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-3.1.3.jar:3.1.3]
+	... 18 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.FilterRegistrationBean]: Factory method 'messageFilterRegistrationBean' threw exception with message: Unresolved compilation problem: 
+	Com cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 58 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Com cannot be resolved to a type
+
+	at com.example.basic.filter.MessageFilter.<init>(MessageFilter.java:13) ~[main/:na]
+	at com.example.basic.config.FilterConfig.messageFilterRegistrationBean(FilterConfig.java:16) ~[main/:na]
+	at com.example.basic.config.FilterConfig$$SpringCGLIB$$0.CGLIB$messageFilterRegistrationBean$0(<generated>) ~[main/:na]
+	at com.example.basic.config.FilterConfig$$SpringCGLIB$$2.invoke(<generated>) ~[main/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.0.11.jar:6.0.11]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-6.0.11.jar:6.0.11]
+	at com.example.basic.config.FilterConfig$$SpringCGLIB$$0.messageFilterRegistrationBean(<generated>) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 59 common frames omitted
+"2023-09-18 12:52:03,232 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 924 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:52:03,233 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:52:03,299 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:52:03,299 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:52:03,299 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:52:03,304 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:52:03,304 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 70 ms
+""2023-09-18 12:52:03,307 INFO  [restartedMain] org.apache.catalina.core.StandardContext : Suspicious URL pattern: [/message/**] in context [], see sections 12.1 and 12.2 of the Servlet specification
+""2023-09-18 12:52:03,336 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:52:03,345 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:52:03,346 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.123 seconds (process running for 54.571)
+""2023-09-18 12:52:03,347 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+""2023-09-18 12:52:07,774 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+""2023-09-18 12:52:07,778 INFO  [Thread-7] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:52:07,820 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 924 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:52:07,820 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:52:07,880 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:52:07,880 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:52:07,880 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:52:07,884 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:52:07,884 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 63 ms
+""2023-09-18 12:52:07,886 INFO  [restartedMain] org.apache.catalina.core.StandardContext : Suspicious URL pattern: [/message/**] in context [], see sections 12.1 and 12.2 of the Servlet specification
+""2023-09-18 12:52:07,909 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:52:07,913 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:52:07,914 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.103 seconds (process running for 59.139)
+""2023-09-18 12:52:07,914 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+""2023-09-18 12:52:11,339 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+""2023-09-18 12:52:11,341 INFO  [Thread-17] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:52:11,376 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 924 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:52:11,376 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:52:11,439 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:52:11,439 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:52:11,439 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:52:11,443 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:52:11,443 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 66 ms
+""2023-09-18 12:52:11,445 INFO  [restartedMain] org.apache.catalina.core.StandardContext : Suspicious URL pattern: [/message/**] in context [], see sections 12.1 and 12.2 of the Servlet specification
+""2023-09-18 12:52:11,464 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:52:11,467 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:52:11,468 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.102 seconds (process running for 62.694)
+""2023-09-18 12:52:11,469 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+""2023-09-18 12:52:13,889 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+""2023-09-18 12:52:13,894 INFO  [Thread-21] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:52:13,937 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 924 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:52:13,937 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:52:13,993 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:52:13,993 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:52:13,993 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:52:13,997 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:52:13,997 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 59 ms
+""2023-09-18 12:52:13,999 INFO  [restartedMain] org.apache.catalina.core.StandardContext : Suspicious URL pattern: [/message/**] in context [], see sections 12.1 and 12.2 of the Servlet specification
+""2023-09-18 12:52:14,021 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:52:14,025 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:52:14,026 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.098 seconds (process running for 65.252)
+""2023-09-18 12:52:14,027 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+""2023-09-18 12:52:21,329 INFO  [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2023-09-18 12:52:21,329 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+""2023-09-18 12:52:21,330 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 0 ms
+""2023-09-18 12:52:21,345 INFO  [http-nio-8080-exec-1] com.example.basic.controller.UserController : index start!!
+""2023-09-18 12:52:44,749 INFO  [http-nio-8080-exec-2] com.example.basic.controller.UserController : index start!!
+""2023-09-18 12:53:33,319 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+""2023-09-18 12:53:33,324 INFO  [Thread-25] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+""2023-09-18 12:53:33,324 INFO  [Thread-25] org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/] : Destroying Spring FrameworkServlet 'dispatcherServlet'
+""2023-09-18 12:53:33,373 INFO  [restartedMain] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 924 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic/bin/main started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-2. springLombokGradle/basic)
+""2023-09-18 12:53:33,373 INFO  [restartedMain] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+""2023-09-18 12:53:33,445 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+""2023-09-18 12:53:33,445 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+""2023-09-18 12:53:33,445 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+""2023-09-18 12:53:33,449 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+""2023-09-18 12:53:33,449 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 75 ms
+""2023-09-18 12:53:33,451 INFO  [restartedMain] org.apache.catalina.core.StandardContext : Suspicious URL pattern: [/message/**] in context [], see sections 12.1 and 12.2 of the Servlet specification
+""2023-09-18 12:53:33,471 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+""2023-09-18 12:53:33,474 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+""2023-09-18 12:53:33,475 INFO  [restartedMain] com.example.basic.BasicApplication : Started BasicApplication in 0.113 seconds (process running for 144.701)
+""2023-09-18 12:53:33,476 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+""2023-09-18 12:53:40,310 INFO  [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2023-09-18 12:53:40,314 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+""2023-09-18 12:53:40,314 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 0 ms
+""2023-09-18 12:53:40,315 INFO  [http-nio-8080-exec-1] com.example.basic.controller.UserController : index start!!
+""2023-09-18 12:53:56,208 INFO  [http-nio-8080-exec-2] com.example.basic.controller.UserController : index start!!
+"

@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.basic.data.dto.BasicDto;
-import com.example.basic.data.dto.BasicLombokDto;
+import com.example.basic.model.dto.BasicDto;
+import com.example.basic.model.dto.BasicLombokDto;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -88,14 +89,14 @@ public class ControllerBasicGet {
 
   // http://localhost:8080/api/v1/get/variable6/dto?name=name1&email=sample@gmail.com
   @GetMapping(value = "variable6/dto")
-  public String getVariable6(BasicDto dto) {
+  public String getVariable6(@ModelAttribute BasicDto dto) {
     
     return "GetMapping >> "+dto.toString();
   }
 
   // http://localhost:8080/api/v1/get/variable7/dto?name=name1&email=sample@gmail.com
   @GetMapping(value = "variable7/dto")
-  public String getVariable7(BasicLombokDto dto) {
+  public String getVariable7(@ModelAttribute BasicLombokDto dto) {
     
     return "GetMapping >> "+dto.toString();
   }
