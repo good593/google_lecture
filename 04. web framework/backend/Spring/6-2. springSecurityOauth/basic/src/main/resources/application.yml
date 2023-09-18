@@ -30,3 +30,8 @@ spring:
           google:
             client-id: 973119606038-lrfjcpi661lnmcr1hdf2o97r58bejh8f.apps.googleusercontent.com
             client-secret: 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
+            scope:
+            - profile 
+            - email 
+
+
