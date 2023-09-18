@@ -71,7 +71,7 @@ marp: true
 
 ---
 ## Dispatcher-Servlet 동작 방식 
-![Alt text](image.png)
+![Alt text](./img/image.png)
 
 ---
 1. 클라이언트의 요청을 디스패처 서블릿이 받음
@@ -90,7 +90,7 @@ marp: true
 
 ---
 ## Filter 동작 방식 
-![Alt text](image-1.png)
+![Alt text](./img/image-1.png)
 
 ---
 ## Filter 메소드 
@@ -121,7 +121,7 @@ public interface Filter {
 
 ---
 ## Interceptor 동작 방식 
-![Alt text](image-2.png)
+![Alt text](./img/image-2.png)
 
 ---
 ## Interceptor 메소드 
