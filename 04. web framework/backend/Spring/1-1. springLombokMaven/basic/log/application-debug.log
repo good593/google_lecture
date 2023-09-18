@@ -1,0 +1,14 @@
+2023-09-16 02:14:05,860 INFO  [main] com.example.basic.BasicApplication : Starting BasicApplication using Java 17.0.8.1 with PID 21962 (/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-1. springLombokMaven/basic/target/classes started by gyoungwon-cho in /Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/1-1. springLombokMaven/basic)
+2023-09-16 02:14:05,860 DEBUG [main] com.example.basic.BasicApplication : Running with Spring Boot v3.1.3, Spring v6.0.11
+2023-09-16 02:14:05,861 INFO  [main] com.example.basic.BasicApplication : No active profile set, falling back to 1 default profile: "default"
+2023-09-16 02:14:06,256 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+2023-09-16 02:14:06,261 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2023-09-16 02:14:06,261 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-16 02:14:06,299 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2023-09-16 02:14:06,299 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 415 ms
+2023-09-16 02:14:06,388 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-09-16 02:14:06,422 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 18 mappings in 'requestMappingHandlerMapping'
+2023-09-16 02:14:06,429 DEBUG [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-09-16 02:14:06,432 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-09-16 02:14:06,463 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-16 02:14:06,467 INFO  [main] com.example.basic.BasicApplication : Started BasicApplication in 0.806 seconds (process running for 1.038)

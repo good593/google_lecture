@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Multi Form Page</h1>
+    <h3 th:utext="${msg}"></h3>
+
+    <form action="/multi1" method="post">
+        ID? <input type="text" name="id" th:value="${id}"><br>
+        NAME? <input type="text" name="name" th:value="${name}"><br>
+        EMAIL? <input type="text" name="email" th:value="${email}"><br>
+        AGE? <input type="text" name="age" th:value="${age}"><br>
+        GENDER? <input type="text" name="gender" th:value="${gender}"><br>
+        <input type="submit" value="send">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+INDEX VERSION 1.134
+/Users/gyoungwon-cho/dev/google drive/google_lecture/04. web framework/backend/Spring/0-1. ServletJSP/projects/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3816026000.index
+/BBS/src/main/java
