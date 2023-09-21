@@ -16,3 +16,7 @@ marp: true
 - [참고문서](https://www.youtube.com/watch?v=e9V6J4Lu3p8&list=PLpzDq-W37heSMxWj0XEVfM1rUcHBDjhm3&index=11)
 - 예제 프로젝트: jspHttp
 
+---
+# [JSP with MySQL](./JSPwithMySQL.md)
+- 예제 프로젝트: board
+
