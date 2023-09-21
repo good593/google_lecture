@@ -84,9 +84,9 @@ marp: true
 CREATE TABLE board_table (
  num        INT NOT NULL AUTO_INCREMENT,
  title     VARCHAR(20) NOT NULL,
- wruter    VARCHAR(20) NOT NULL,
+ writer    VARCHAR(20) NOT NULL,
  content   VARCHAR(100),
- reg_date    date,
+ reg_date    timestamp default now(),
  cnt int default 0,
  PRIMARY KEY(num)
 );

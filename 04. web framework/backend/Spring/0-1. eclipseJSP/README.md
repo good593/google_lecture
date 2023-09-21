@@ -20,3 +20,9 @@ marp: true
 # [JSP with MySQL](./JSPwithMySQL.md)
 - 예제 프로젝트: board
 
+---
+# [JSP 게시판](./Board.md)
+- 예제 프로젝트: board
+
+
+

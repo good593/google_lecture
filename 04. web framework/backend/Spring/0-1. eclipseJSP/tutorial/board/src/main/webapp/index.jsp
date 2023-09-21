@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>Main Page</h1>
-<a href="#">게시판</a>
+<a href="./board/list.jsp">게시판</a>
 </body>
 </html>
 
