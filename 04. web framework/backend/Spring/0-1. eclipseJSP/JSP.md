@@ -2,6 +2,14 @@
 marp: true
 
 ---
+# [JSP(Java Server Pages)](https://devlog-wjdrbs96.tistory.com/152)
+- JSP는 Java Server Pages 의 약자이며 HTML 코드에 JAVA 코드를 넣어 동적 웹페이지를 생성하는 웹어플리케이션 도구이다. 
+- JSP가 실행되면 자바 서블릿(Servlet)으로 변환되며 웹 어플리케이션 서버에서 동작되면서 필요한 기능을 수행하고 
+	- 그렇게 생성된 데이터를 웹페이지와 함께 클라이언트로 응답한다.
+
+
+
+---
 # JSP 파일 구조
 
 ---
@@ -55,6 +63,8 @@ marp: true
 ---
 
 ## 1. 작동 원리 설명
+![Alt text](./img/jsp/image1.png)
+
 
 ---
 ### 1-1. 브라우저(클라이언트)에서 서버로 요청 
