@@ -31,7 +31,7 @@ public class ControllerBasicGet {
     log.error("요청을 처리하는 중 문제가 발생한 경우");
   }
   
-  // http://localhost:8080/api/v1/hello/test
+  // http://localhost:8080/api/v1/get/test
   @RequestMapping(value = "/test", method = RequestMethod.GET)
   public String getHello() {
     return "RequestMapping(GET) >> Hello world";
