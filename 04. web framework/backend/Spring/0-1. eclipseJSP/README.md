@@ -24,5 +24,12 @@ marp: true
 # [JSP 게시판](./Board.md)
 - 예제 프로젝트: board
 
+---
+# [Servlet & MVC](./Servlet.md)
+- 예제 프로젝트
+  - servletJsp
+    - 예제 url: http://localhost:8080/servletJsp/add?n1=3&n2=5
+    - 예제 url: http://localhost:8080/servletJsp/min?n1=5&n2=2
+
 
 
