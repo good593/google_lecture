@@ -31,5 +31,12 @@ marp: true
     - 예제 url: http://localhost:8080/servletJsp/add?n1=3&n2=5
     - 예제 url: http://localhost:8080/servletJsp/min?n1=5&n2=2
 
+---
+# [Servlet with properties](./properties.md)
+- 예제 프로젝트 
+  - propertiesServlet
+    - 예제 url: http://localhost:8080/propertiesServlet/add?n1=3&n2=5
+    - 예제 url: http://localhost:8080/propertiesServlet/min?n1=5&n2=2
+
 
 
