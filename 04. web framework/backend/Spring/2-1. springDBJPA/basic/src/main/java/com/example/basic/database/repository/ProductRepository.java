@@ -10,4 +10,6 @@ public interface ProductRepository extends JpaRepository<ProductEntity, Long> {
   
   @Query(value ="SELECT u.* FROM product u WHERE u.product_id = :productId", nativeQuery= true)
   ProductEntity getEntityByProductId(@Param(value = "productId") String productId);
+
+  
 }
