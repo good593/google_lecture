@@ -24,4 +24,17 @@ marp: true
 - build 선택 
 ![Alt text](./img/vscode/image-4.png)
 
-
+---
+# 단축키 
+- psvm + 텝: main 메소드 생성 
+- sout + 텝: print 메소드 생성 
+```java
+public class Main {
+  // psvm + 텝 !!
+  public static void main(String[] args) {
+    
+    // sout + 텝 !!
+    System.out.println("Hello World");
+  }
+}
+```
