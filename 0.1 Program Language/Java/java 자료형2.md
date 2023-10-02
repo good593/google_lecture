@@ -7,7 +7,7 @@ marp: true
 
 ---
 - 자료형[] 변수 = {데이터1, 데이터2, 데이터3, ... };
-![Alt text](image-1.png)
+![Alt text](./img/grammer/image-1.png)
 ```java
 String[] beer = {"Kloud", "Cass", "Asahi", "Guinness", "Heineken"};
 
@@ -127,7 +127,7 @@ System.out.println(map.remove("people"));
 - Map 컬렉션 클래스에서 가장 많이 사용되는 클래스 중 하나입니다.
 - 해시 알고리즘(hash algorithm)을 사용하여 많은 양의 데이터를 검색하는데 검색 속도가 매우 빠르다.
 
-![Alt text](image-2.png)
+![Alt text](./img/grammer/image-2.png)
 
 ---
 ```java

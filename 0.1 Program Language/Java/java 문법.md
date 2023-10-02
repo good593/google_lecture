@@ -2,7 +2,7 @@
 marp: true
 ---
 # 코드 종료시에는 세미콜론을 작성한다!
-![Alt text](image.png)
+![Alt text](./img/grammer/image.png)
 
 ---
 # [java 자료형1](./java%20자료형1.md)
@@ -13,23 +13,36 @@ marp: true
 - 문자형 
 ---
 # [java 자료형2](./java%20자료형2.md)
-
+- array
+- list
+- map 
+- set 
 
 ---
 # [java 기본함수](./java%20기본함수.md)
+- print
+- Math
+- Random
 
 ---
 # [java 조건문](./java%20조건문.md)
+- if else
+  - 3항 연산자
+  - 조건: &&, ||, ! 
+- switch/case
 
 ---
 # [java 반복문](./java%20반복문.md)
+- for 
+- while 
+- for each 
+- break, continue 
+
 
 ---
-# [java 배열](./java%20배열.md)
+# [java 객체 지향 프로그래밍](./java%20OOP.md)
+- 추상화, 상속, 다형성, 캡슐화 
 
----
-# 참고문서 
-- https://yalco.notion.site/3-a7bb23eef6eb4e699f79c7909e56393c
 
 
 
