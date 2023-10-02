@@ -1,20 +1,18 @@
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
   // psvm + 텝 !!
   public static void main(String[] args) {
     
-    int month = 3;
-    String monthString = "";
-    switch (month) {  // 입력 변수의 자료형은 byte, short, char, int, enum, String만 가능하다.
-        case 1:  monthString = "January";
-                  break;
-        case 2:  monthString = "February";
-                  break;
-        case 3:  monthString = "March";
-                  break;
-        default: monthString = "Invalid month";
-                  break;
-    }
-    System.out.println(monthString);
+    Map<String, String> map = new HashMap<String, String>();
+    map.put("people", "사람");
+    map.put("baseball", "야구");
+
+    System.out.println(map.get("people"));
+    System.out.println(map.containsKey("people"));
+    System.out.println(map.size());
+    System.out.println(map.keySet());  // [baseball, people] 출력
+    System.out.println(map.remove("people"));
   }
 }
