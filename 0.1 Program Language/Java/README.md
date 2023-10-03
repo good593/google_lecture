@@ -13,6 +13,9 @@ marp: true
 # [Java 문법](./java%20문법.md)
 
 ---
+# [Java 예외처리](./java%20예외처리.md)
+
+---
 # 자바 참고문서들 
 - https://www.youtube.com/playlist?list=PLlTylS8uB2fA5PevGI6ARN6v-VQWmqaix
 - https://www.youtube.com/watch?v=ECVWw-ij5Hc&list=PLOSNUO27qFbtjCw-YHcmtfZAkE79HZSOO
