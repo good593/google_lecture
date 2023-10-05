@@ -30,8 +30,7 @@ marp: true
 ![Alt text](image.png)
 
 ---
-# Docker 설치하기 
-
+# [Docker 설치하기](./docker_install.md) 
 
 ---
 ## 사용법 
