@@ -19,6 +19,7 @@ marp: true
   - Docker 이미지의 현재 실행 중인 라이브 인스턴스입니다. 
 - Docker Hub 
   - Docker Hub는 공용 Docker 이미지 저장소입니다. 
+
 ---
 ## Virtual Machines vs Containers
 - Containers는 Virtual Machines와 달리 호스트 운영체제의 커널에서 실행됩니다. 
@@ -27,12 +28,13 @@ marp: true
 아래는 Virtual Machines고 Docker Containers의 비교 이미지입니다.
 
 ---
-![Alt text](image.png)
+![Alt text](./img/docker/image.png)
 
 ---
 # [Docker 설치하기](./docker_install.md) 
 
 ---
+# [Docker 기본명령어](./docker_basic.md) 
 ## 사용법 
 - https://cultivo-hy.github.io/docker/image/usage/2019/03/14/Docker%EC%A0%95%EB%A6%AC/
 - https://pyrasis.com/Docker/Docker-HOWTO
