@@ -28,7 +28,7 @@ marp: true
 아래는 Virtual Machines고 Docker Containers의 비교 이미지입니다.
 
 ---
-![Alt text](./img/docker/image.png)
+![Alt text](./img/image.png)
 
 ---
 # [Docker 설치하기](./docker_install.md) 
