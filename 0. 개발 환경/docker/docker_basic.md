@@ -2,7 +2,16 @@
 marp: true
 ---
 # Docker 기본명령어 
-- Docker Desktop 실행(열기)
+## 참고문서 
+- https://cultivo-hy.github.io/docker/image/usage/2019/03/14/Docker%EC%A0%95%EB%A6%AC/
+- https://pyrasis.com/Docker/Docker-HOWTO
+
+---
+## 자주 사용하는 명령어 옵션들 
+![Alt text](./img/basic/image11.png)
+
+---
+## Docker Desktop 실행(열기) 
 ![Alt text](./img/basic/image-1.png)
 
 ---
@@ -80,3 +89,5 @@ marp: true
 - `docker rmi <이미지명>:<태그>`: 이미지 삭제 
 
 ![Alt text](./img/basic/image-19.png)
+
+

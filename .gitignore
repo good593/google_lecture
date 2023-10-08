@@ -23,7 +23,11 @@ __pycache__
 # 가상환경 
 .venv 
 .vscode
+
+# mac
 Icon
+.DS_Store
+**/**/.DS_Store
 
 
 # Django samples
