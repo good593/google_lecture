@@ -40,6 +40,12 @@ marp: true
 - https://pyrasis.com/Docker/Docker-HOWTO
 
 ---
+# [Dockerfile](./docker_file.md)
+
+---
+# [Docker Compose](./docker_compose.md)
+
+---
 ## 도커 볼륨 
 - https://junstar92.tistory.com/162
 
@@ -51,14 +57,7 @@ marp: true
 ## 도커 로깅
 - https://junstar92.tistory.com/164
 
----
-## 도커 이미지
-- https://junstar92.tistory.com/166
 
----
-## Dockerfile
-- https://junstar92.tistory.com/168
-- https://12bme.tistory.com/588
 
 ---
 ## Docker Compose 
