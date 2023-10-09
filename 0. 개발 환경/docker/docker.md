@@ -46,24 +46,6 @@ marp: true
 # [Docker Compose](./docker_compose.md)
 
 ---
-## 도커 볼륨 
-- https://junstar92.tistory.com/162
-
----
-## 도커 네트워크 
-- https://junstar92.tistory.com/163
-
----
-## 도커 로깅
-- https://junstar92.tistory.com/164
-
-
-
----
-## Docker Compose 
-
-
----
 ## 예제 
 - https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html
 - https://khj93.tistory.com/entry/Docker-Docker-%EA%B0%9C%EB%85%90
