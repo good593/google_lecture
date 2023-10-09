@@ -1,1 +1,4 @@
 !img
+
+# docker compose mysql 제외 
+database

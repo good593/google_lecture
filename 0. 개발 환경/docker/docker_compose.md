@@ -27,15 +27,20 @@ marp: true
 ```yml
 version: "3"
 
-service:
+services:
   db:
     image: mysql:5.7
     restart: always
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
     volumes:
-      - ./mysqldata:/var/lib/mysql
+      - ./database:/var/lib/mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=dgkcoding
-      - MYSQL_DATABASE=dgkdb
+      MYSQL_ROOT_PASSWORD: "root1234"
+      MYSQL_DATABASE: "examplesdb"
+      MYSQL_USER: "urstory"
+      MYSQL_PASSWORD: "u1234"
     ports:
       - "3306:3306"
 ```
@@ -67,11 +72,14 @@ services:
   db:
     image: mysql:5.7
     restart: always
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
     volumes:
       - ./mysqldata:/var/lib/mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=dgkcoding
-      - MYSQL_DATABASE=dgkdb
+      - MYSQL_ROOT_PASSWORD=root1234
+      - MYSQL_DATABASE=examplesdb
     ports:
       - "3306:3306"
     container_name: dbcontainer
