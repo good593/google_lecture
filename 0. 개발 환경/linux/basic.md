@@ -92,3 +92,5 @@ rm -r <디렉토리명>
 - https://m.hanbit.co.kr/channel/category/category_view.html?cms_code=CMS6390061632
 - https://cocoon1787.tistory.com/717
 - https://www.fun-coding.org/post/linux_basic2.html#gsc.tab=0
+
+
