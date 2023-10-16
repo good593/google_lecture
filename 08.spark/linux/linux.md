@@ -49,6 +49,7 @@ docker run -it --name ubuntu_test ubuntu /bin/bash
 ## [Linux 기본 명령어](./basic.md)
 
 ---
-
-
+# [Vim 사용법](./vim.md) 
+- 윈도우에서는 메모장을 편집기의 기본으로 지원하는 반면, 리눅스에서는 기본 편집기로 vi 편집기를 지원한다.
+- VIM은 Vi IMproved의 약자 이다. 즉, vi에디터를 업그레이드 시킨 것이 vim에디터라고 생각하면 된다.
 
