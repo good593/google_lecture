@@ -4,7 +4,7 @@ marp: true
 # [Hadoop Ecosystem](https://butter-shower.tistory.com/73)
 빅데이터 시대의 도래로 하둡을 좀 더 편하게, 그리고 단점은 수정하여 쉽게 잘 이용하는 여러 서브 프로젝트들이 진행되어 왔다. 그 서브 프로젝트의 모임을 하둡 에코 시스템이라고 한다. 
 
-## Hadoop이란?
+## [Hadoop](./hadoop.md)
 - 하둡은 빅데이터의 처리를 위해서 주로 HDFS(Hadoop Distributed FileSystem)이라는 분산 데이터 저장과 빅데이터 처리를 위한 방식인 MapReduce 방식으로 이루어져 있다. 
 
 ---
