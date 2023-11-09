@@ -9,7 +9,7 @@ marp: true
 ---
 # 설치방법 
 - [Installer를 이용한 설치방법](./MySQL%20Installer.md)
-- Docker를 이용한 설치방법
+- [Docker를 이용한 설치방법](./MySQL%20Docker.md)
 
 ---
 # 
