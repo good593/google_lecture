@@ -39,10 +39,6 @@ marp: true
 - break, continue 
 
 
----
-# [java 객체 지향 프로그래밍](./java%20OOP.md)
-- 추상화, 상속, 다형성, 캡슐화 
-
 
 
 
