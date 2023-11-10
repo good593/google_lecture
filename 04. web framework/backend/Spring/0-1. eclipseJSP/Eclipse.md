@@ -75,7 +75,6 @@ marp: true
 
 ---
 # Dynamic Web Project 생성
-- [[Error] Java compiler level does not match the version of the installed Java project facet 해결방법](https://hermeslog.tistory.com/248)
 ![Alt text](./img/eclipse/image-13.png)
 
 ---
@@ -92,6 +91,28 @@ marp: true
 
 ---
 ![Alt text](./img/eclipse/Dynamic%20folder.png)
+
+---
+- [[Error] Java compiler level does not match the version of the installed Java project facet 해결방법](https://hermeslog.tistory.com/248)
+![Alt text](./img/eclipse/image0.png)
+
+---
+![Alt text](./img/eclipse/image1.png)
+
+---
+- 설치된 Java버전으로 변경!!
+
+![Alt text](./img/eclipse/image2.png)
+
+---
+- 설치된 Java버전으로 변경!!
+
+![Alt text](./img/eclipse/image3.png)
+
+---
+- 설치된 Java버전으로 변경!!
+
+![Alt text](./img/eclipse/image4.png)
 
 ---
 ## jsp 파일 생성 
