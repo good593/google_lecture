@@ -92,6 +92,7 @@ services:
 	ResultSet rs = null;
 	
 	try {
+
 		Class.forName("com.mysql.jdbc.Driver");
 		conn = DriverManager.getConnection(url, user, password);
 		
@@ -107,18 +108,23 @@ services:
 		}
 		
 	} catch (Exception e) {
+
 		System.out.println("MySQL 연결 오류: "+e.getMessage());
 	} finally {
+
 		if(pstmt != null) 
  			try{pstmt.close();}catch(SQLException sqle){}
  		if(conn != null) 
  			try{conn.close();}catch(SQLException sqle){}
 	}
 %>
+
 </body>
 </html>
 
 ```
+
+---
 - table 생성 
 
 ```sql
