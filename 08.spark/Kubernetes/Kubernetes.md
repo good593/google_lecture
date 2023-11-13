@@ -1,7 +1,11 @@
 ---
 marp: true
 ---
+# 참고 도서 
+- https://brunch.co.kr/@topasvga/1455
+- https://careerly.co.kr/comments/87950
 
+---
 - https://pyrasis.com/jHLsAlwaysUpToDateKubernetes
 
 ---
