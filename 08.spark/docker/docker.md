@@ -46,6 +46,11 @@ marp: true
 # [Docker Compose](./docker_compose.md)
 
 ---
+# [Docker failed to initailize](https://github.com/docker/for-win/issues/12523#issuecomment-1029156833)
+![Alt text](./img/error/image.png)
+![Alt text](./img/error/image-2.png)
+
+---
 ## 예제 
 - https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html
 - https://khj93.tistory.com/entry/Docker-Docker-%EA%B0%9C%EB%85%90
