@@ -77,6 +77,7 @@ $(.venv) uvicorn helloworld:app --reload
 ---
 # FastAPI 예제들 
 - [FastAPI Tutorial](https://fastapi.tiangolo.com/ko/tutorial/first-steps/)
+    - [연습용 예제파일들](./samples/tutorial/README.md)
 - [FastAPI with DB](https://wikidocs.net/175950)
 - [FastAPI with Sklearn and Docker](https://medium.com/analytics-vidhya/serve-a-machine-learning-model-using-sklearn-fastapi-and-docker-85aabf96729b)
 - [FastAPI with pytorch Model](https://velog.io/@rapidrabbit76/FastAPI%EB%A1%9C-Model-serving-%ED%95%98%EA%B8%B0-with-Micro-Batching)
