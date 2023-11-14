@@ -32,8 +32,11 @@
 		rs = pstmt.executeQuery();
 		
 		while(rs.next()) {
-			
-			System.out.println("결과: "+rs.getString("Tables_in_examplesdb"));
+			String table_name = rs.getString("Tables_in_examplesdb");
+			System.out.println("결과: "+table_name);
+			%>
+			<p>테이블명: <%= table_name %></p>
+			<%
 		}
 		
 	} catch (Exception e) {
