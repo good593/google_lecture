@@ -7,3 +7,8 @@ marp: true
 ---
 # logging
 - @Slf4j
+
+
+---
+- https://github.com/walbatrossw/boot-qna/tree/master
+- https://github.com/farhanatsani/spring-boot-mustache-core-ui-demo/tree/master
