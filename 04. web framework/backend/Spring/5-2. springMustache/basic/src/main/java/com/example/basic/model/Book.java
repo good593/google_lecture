@@ -14,7 +14,7 @@ import lombok.ToString;
 @ToString
 public class Book {
   private long bookid;
-  private String isbn;
+  private Boolean isbn;
   private String bookTitle;
   private String author;
   private Double price;

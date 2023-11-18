@@ -1,13 +1,20 @@
-{{>header}}
-<h1>Mustache with Spring Boot</h1>
-<div> <b>Book List </b></div>
-{{#bookList}}
-    <b> Book ID: </b>{{bookid}}
-    <b> ISBN Number: </b>{{isbn}}
-    <b> Book Title: </b>{{bookTitle}}
-    <b> Author: </b>{{author}}
-    <b> Price: </b>{{price}}
-    <br>
-    <hr>
-{{/bookList}}
-{{>footer}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Spring Boot application with Mustache</title>
+</head>
+<body>
+{{#book}}
+    <p> Book ID: {{bookid}}</p>
+    <p> Book Title: {{bookTitle}}</p>
+    {{#isbn}}
+        <p> isbn: {{isbn}}</p>
+    {{/isbn}}
+    {{^isbn}}
+        <p> isbn가 거짓입니다.</p>
+    {{/isbn}}
+    <p> Price: {{price}}</p>
+{{/book}}
+</body>
+</html>

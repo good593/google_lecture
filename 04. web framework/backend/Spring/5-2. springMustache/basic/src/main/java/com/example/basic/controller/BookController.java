@@ -1,8 +1,7 @@
 package com.example.basic.controller;
 
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
+import java.util.ArrayList;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,23 +14,47 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @Controller
 public class BookController {
-  @GetMapping("/books")
-    public String getProducts(Model model){
-      log.info("getProducts");
-      
-        List bookList = IntStream.range(0,7)
-                        .mapToObj(this::getBook)
-                        .collect(Collectors.toList());
 
-        model.addAttribute("bookList",bookList);
-        return "book";
+  @GetMapping("/hello")
+  public String getHello(Model model) {
+
+    model.addAttribute("name","홍길동");
+    model.addAttribute("company","<b>Github</b>");
+    model.addAttribute("person",false);
+    return "Hello";
+  }
+
+  @GetMapping("/book")
+  public String getBook(Model model) {
+    int i = 1;
+    Book book = new Book((long) i,
+              false,
+              "<title> Book Title </title>",
+              "",
+              (double) (100 * i));
+    
+    model.addAttribute("book",book);
+    return "book";
+  }
+
+
+  @GetMapping("/bookList")
+  public String getBooks(Model model) {
+    log.info("books");
+    
+    List<Book> bookList = new ArrayList<Book>();
+
+    for(int i=0;i<5;i++){
+      Book book = new Book((long) i,
+              (i <3) ? true : false,
+              "Book Name " + i,
+              "Author " + i,
+              (double) (100 * i));
+      bookList.add(book);
     }
 
-    private Book getBook(int i){
-        return new Book((long) i,
-                "ISBN Number -" + i,
-                "Book Name " + i,
-                "Author " + i,
-                (double) (100 * i));
-    }
+    model.addAttribute("bookList",bookList);
+    return "bookList";
+  }
+
 }
