@@ -1,6 +1,9 @@
 ---
 marp: true
 ---
+## [쿠버네티스 설치](./kubernetes_install.md)
+
+---
 # 참고 도서 
 - https://brunch.co.kr/@topasvga/1455
 - https://careerly.co.kr/comments/87950
