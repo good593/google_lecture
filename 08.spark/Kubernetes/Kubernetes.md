@@ -1,7 +1,11 @@
 ---
 marp: true
 ---
-## [쿠버네티스 설치](./kubernetes_install.md)
+# [Install Kubernetes](./kubernetes_install.md)
+
+---
+# Kubernetes Tutorial
+## [Minikube Tutorial](./kubernetes_minikube.md)
 
 ---
 # 참고 도서 

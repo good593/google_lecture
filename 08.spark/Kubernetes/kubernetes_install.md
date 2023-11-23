@@ -139,6 +139,10 @@ kind create cluster
 ![Alt text](./img/install/image-26.png)
 
 ---
+## [MiniKube vs Kind](https://www.padok.fr/en/blog/minikube-kubeadm-kind-k3s)
+
+
+---
 ## [5. Install Kubernetes Dashboard(옵션)](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
 ```shell
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
