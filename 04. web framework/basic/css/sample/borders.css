@@ -2,8 +2,8 @@ h1{
     border-top-style: dotted;
     border-bottom-style: dotted;
     border-left-style: double;
-    border-left-width: 10px;
-    border-left-color: silver;
+    border-left-width: 50px;
+    border-left-color: blue;
 }
 
 p{
