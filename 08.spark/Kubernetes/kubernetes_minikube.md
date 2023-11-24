@@ -1,6 +1,25 @@
 ---
 marp: true
 ---
+# [MiniKube](https://minikube.sigs.k8s.io/docs/)
+- [참고용](https://www.padok.fr/en/blog/minikube-kubeadm-kind-k3s)
+
+Minimum requirements for the host machine:
+- CPU: 2
+- Memory: 2 GB
+- Disk space: 20 GB
+
+---
+## MiniKube Architecture
+![Alt text](./img/minikube/image-19.png)
+
+---
+## MiniKube 장단점
+- The inconvenience of this solution is this is not possible to add other nodes
+
+![Alt text](./img/minikube/image-18.png)
+
+---
 # [Hello Minikube](https://kubernetes.io/docs/tutorials/hello-minikube/)
 ## 1. Create a minikube cluster
 ```shell
