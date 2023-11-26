@@ -8,7 +8,7 @@ marp: true
 # [이클립스 문서](./Eclipse.md)
 
 ---
-# [Java with MySQL]()
+# [Java with MySQL](./JavawithMySQL.md)
 
 ---
 # [JSP 기초](./JSP.md)
