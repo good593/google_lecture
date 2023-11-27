@@ -102,7 +102,7 @@ if ($oldPath.Split(';') -inotcontains 'C:\minikube'){
 ![Alt text](./img/install/image-13.png)
 
 ---
-- 컴퓨터 재실행 후 minikube 실행!!
+- 컴퓨터 재실행 후 minikube를 이용한 cluster 생성!!
 ```shell
 minikube start
 ```
@@ -110,6 +110,11 @@ minikube start
 
 ---
 ![Alt text](./img/install/image-27.png)
+- minikube를 이용한 cluster 삭제 
+```shell
+minikube delete
+```
+![Alt text](./img/install/image-05.png)
 
 ---
 ## [4. Via Kind(옵션)](https://kmaster.tistory.com/26)
@@ -126,17 +131,26 @@ curl.exe -Lo kind-windows-amd64.exe https://kind.sigs.k8s.io/dl/v0.20.0/kind-win
 Move-Item .\kind-windows-amd64.exe c:\dev\kind.exe
 ```
 ![Alt text](./img/install/image-23.png)
-![Alt text](./img/install/image-25.png)
+- 환경변수에 path 추가 
+
+![Alt text](./img/install/image-01.png)
 
 ---
-- kind 실행 
+- kind를 이용하여 cluster 생성  
 ```shell
-kind create cluster
+kind create cluster --name <이름>
 ```
-![Alt text](./img/install/image-24.png)
+![Alt text](./img/install/image-02.png)
 
 ---
-![Alt text](./img/install/image-26.png)
+- 생성된 cluster확인 
+
+![Alt text](./img/install/image-03.png)
+- cluster 삭제
+```shell
+kind delete cluster --name <이름>
+```
+![Alt text](./img/install/image-04.png)
 
 ---
 ## [MiniKube vs Kind](https://www.padok.fr/en/blog/minikube-kubeadm-kind-k3s)
@@ -155,7 +169,6 @@ kubectl proxy
 ```
 ![Alt text](./img/install/image-29.png)
 
----
 - [token 생성](https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md)
 ```shell
 kubectl -n kubernetes-dashboard create token kubernetes-dashboard
