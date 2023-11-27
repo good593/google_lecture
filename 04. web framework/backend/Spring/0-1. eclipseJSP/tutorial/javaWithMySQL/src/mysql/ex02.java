@@ -25,6 +25,15 @@ public class ex02 {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
+
+			if(rs != null) {
+				try {
+					rs.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
 			
 			if(pstmt != null) {
 				try {

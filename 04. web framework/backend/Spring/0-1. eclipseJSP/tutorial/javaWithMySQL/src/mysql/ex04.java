@@ -1,6 +1,7 @@
 package mysql;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -11,12 +12,11 @@ public class ex04 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Connection conn = null; 
-		Statement pstmt = null;
+		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		
-		
+		JdbcUtil ju = JdbcUtil.getInstance();
 		try {
-			JdbcUtil ju = JdbcUtil.getInstance();
 			conn = ju.getConnection();
 			
 			String sql = "select num, title, writer, content, reg_date, cnt from board_table;";
@@ -45,23 +45,7 @@ public class ex04 {
 			e.printStackTrace();
 		} finally {
 			
-			if(pstmt != null) {
-				try {
-					pstmt.close();
-				} catch (SQLException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
-			
-			if(conn != null) {
-				try {
-					conn.close();
-				} catch (SQLException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
+			ju.closeAll(conn, pstmt, rs);
 		}
 	}
 

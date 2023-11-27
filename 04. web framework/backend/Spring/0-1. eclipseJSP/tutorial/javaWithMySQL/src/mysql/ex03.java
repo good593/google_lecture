@@ -8,10 +8,11 @@ public class ex03 {
 		// TODO Auto-generated method stub
 		Connection conn=null;
 		PreparedStatement pstmt=null;
+		ResultSet rs = null;
 		int ret = -1;
+		JdbcUtil ju = JdbcUtil.getInstance();
 		
 		try {
-			JdbcUtil ju = JdbcUtil.getInstance();
 			conn = ju.getConnection();
 			
 			String sql = "insert into board_table (title, writer, content) values(?, ?, ?);";
@@ -28,23 +29,7 @@ public class ex03 {
 			e.printStackTrace();
 		} finally {
 			
-			if(pstmt != null) {
-				try {
-					pstmt.close();
-				} catch (SQLException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
-			
-			if(conn != null) {
-				try {
-					conn.close();
-				} catch (SQLException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
+			ju.closeAll(conn, pstmt, rs);
 		}
 	}
 
