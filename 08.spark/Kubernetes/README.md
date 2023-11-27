@@ -12,6 +12,7 @@ marp: true
 ---
 # Kubernetes Tutorial
 ## [Minikube Tutorial](./kubernetes_minikube.md)
+## [Kind Tutorial](./kubernetes_kind.md)
 
 ---
 # 참고 도서 
