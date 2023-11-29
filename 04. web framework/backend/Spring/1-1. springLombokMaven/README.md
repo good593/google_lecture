@@ -12,6 +12,7 @@ marp: true
 
 ---
 # [Maven](./maven.md)
+- [Spring Boot Initializr](https://start.spring.io/)
 
 ---
 # 소스
