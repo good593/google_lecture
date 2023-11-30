@@ -5,32 +5,26 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.basic.model.MemberEntity;
-import com.example.basic.repository.MemberMapper;
+import com.example.basic.model.entity.ProductEntity;
+import com.example.basic.model.repository.ProductMapper;
 
 @Service
 public class ProductService {
-  
-  @Autowired
-  private MemberMapper productMapper;
+    
+    @Autowired
+    private ProductMapper productMapper;
 
-  public List<MemberEntity> selectEntityAll(String memberName, String memberAddr) {
-    return productMapper.selectEntityAll(memberName, memberAddr);
-  }
+    public List<ProductEntity> selectProductAll() {
 
-  public MemberEntity selectEntityById(String memberId) {
-    return productMapper.selectEntityById(memberId);
-  }
+        List<ProductEntity> productList = productMapper.selectProductAll();
+        return productList;
+    }
 
-  public void insertEntity(MemberEntity memberEntity) {
-    productMapper.insertEntity(memberEntity);
-  }
+        public List<ProductEntity> selectProductFilter(ProductEntity product) {
 
-  public void updateEntity(MemberEntity memberEntity) {
-    productMapper.updateEntity(memberEntity);
-  }
-  
-  public void deleteEntity(String memberId) {
-    productMapper.deleteEntity(memberId);
-  }
+            List<ProductEntity> productList = productMapper.selectProductFilter(
+                product.getProductPrice(), product.getProductName()
+            );
+        return productList;
+    }
 }

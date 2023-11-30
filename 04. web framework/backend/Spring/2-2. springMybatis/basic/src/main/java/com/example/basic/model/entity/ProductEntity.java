@@ -1,4 +1,4 @@
-package com.example.basic.model;
+package com.example.basic.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,11 +11,9 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class MemberEntity {
-
-  private int memberId;
-  private String memberName;
-  private String memberAddr;
-  private int memberAge;
-
+public class ProductEntity {
+    
+    private int productId;
+    private String productName;
+    private int productPrice;
 }

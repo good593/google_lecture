@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.basic.model.repository.ProductMapper">
+    <select id="selectProductAll" resultType="ProductEntity">
+        select 
+            product_id
+            , product_name
+            , product_price
+        from product 
+        ;
+    </select>
+
+    <select id="selectProductFilter" resultType="ProductEntity">
+        select 
+            product_id
+            , product_name
+            , product_price
+        from product 
+        where 1=1
+        <if test='productPrice != null and productPrice > 0'>
+            and product_price > #{productPrice}
+        </if>
+        <if test='productName != null and productName != ""'>
+            and product_name like concat('%',#{productName},'%')
+        </if>
+    </select>
+
+    <select id="selectProductById" resultType="ProductEntity">
+        select 
+            product_id
+            , product_name
+            , product_price
+        from product 
+        where 1=1
+            and product_id = #{productId}
+    </select>
+
+    <insert id="insertProduct" parameterType="ProductEntity">
+        INSERT INTO product(product_name, product_price)
+        VALUES(#{productName}, #{productPrice})
+    </insert>
+
+    <update id="updateProduct" parameterType="ProductEntity">
+        update product 
+        <set>
+            <if test='productName != null and productName != ""'>
+                product_name = #{productName}
+            </if>
+            <if test='productPrice != null and productPrice > 0'>
+                product_price = #{productPrice}
+            </if>
+        </set>
+        where 1=1
+            and product_id = #{productId};
+    </update>
+
+    <delete id="deleteProduct">
+        delete from product
+        where 1=1
+            and product_id = #{productId};
+    </delete>
+</mapper>

@@ -1,22 +1,35 @@
-# Spring Data Source 설정 
+# Spring Boot 설정!!!
 spring:
+    # Spring Boot 로그 설정!!
+    output:
+        ansi:
+            enabled: always
+    
+    # Database(MySQL) 설정!!
+    datasource:
+        username: urstory
+        password: u1234
+        # url: jdbc:mysql://127.0.0.1:3306/examplesdb?userSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul
+        # driver-class-name: com.mysql.jdbc.Driver
+        
+        # log4jdbc 적용!!
+        url: jdbc:log4jdbc:mysql://127.0.0.1:3306/examplesdb?userSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul
+        driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+        hikari:
+            connection-test-query: SELECT NOW() FROM dual
 
-  output:
-    ansi:
-      enabled: always 
 
-  datasource:
-    url: jdbc:mysql://127.0.0.1:3306/examplesdb?userSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul
-    username: urstory
-    password: u1234
-    driver-class-name: com.mysql.jdbc.Driver
-
+# Mybatis 설정!!!
 mybatis:
-  # default Package location - resultType의 Alias를 지정합니다.
-  type-aliases-package: com.example.basic.model
-  # mapper location - 바라 볼 xml 파일을 지정합니다.
-  mapper-locations: classpath:mapper/**/*.xml
-  # column name to camel case - 반환 받는 컬럼명을 CamelCase로 받는 설정을 합니다.
-  configuration:
-    map-underscore-to-camel-case: true
+    # default Package location - resultType의 Alias를 지정합니다.
+    type-aliases-package: com.example.basic.model.entity
+    # mapper location - 바라 볼 xml 파일을 지정합니다.
+    mapper-locations: classpath:mapper/**/*.xml
+    # column name to camel case - 반환 받는 컬럼명을 CamelCase로 받는 설정을 합니다.
+    configuration:
+        map-underscore-to-camel-case: true
+
+
+
+
 
