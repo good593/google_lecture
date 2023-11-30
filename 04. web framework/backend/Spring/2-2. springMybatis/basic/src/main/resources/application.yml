@@ -9,7 +9,7 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/examplesdb?userSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul
     username: urstory
     password: u1234
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
 
 mybatis:
   # default Package location - resultType의 Alias를 지정합니다.
