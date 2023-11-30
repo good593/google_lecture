@@ -14,7 +14,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
     // TODO Auto-generated method stub
     registry.addInterceptor(new BasicInterceptor())
       .addPathPatterns("/**")
-      .excludePathPatterns("/hello");
+      .excludePathPatterns("/admin/**");
 
     // WebMvcConfigurer.super.addInterceptors(registry);
   }
