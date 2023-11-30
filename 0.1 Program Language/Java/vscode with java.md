@@ -1,15 +1,22 @@
 ---
 marp: true
 ---
-# [vscode with java 세팅](https://offbyone.tistory.com/437)
+# [vscode with java 세팅](https://kim-oriental.tistory.com/22)
 
 ---
 - 자바 익스텐션 설치
+
 ![Alt text](./img/vscode/image.png)
 
 ---
 - 스프링 익스텐션 설치
+
 ![Alt text](./img/vscode/image-1.png)
+
+---
+- [Debug Console 설정](https://whitexs.tistory.com/72)
+
+![Alt text](./img/vscode/image0.png)
 
 ---
 ## [사용법]((https://code.visualstudio.com/docs/java/java-tutorial)) 
