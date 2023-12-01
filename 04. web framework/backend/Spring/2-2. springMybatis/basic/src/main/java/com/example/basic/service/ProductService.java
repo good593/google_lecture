@@ -20,11 +20,11 @@ public class ProductService {
         return productList;
     }
 
-        public List<ProductEntity> selectProductFilter(ProductEntity product) {
+    public List<ProductEntity> selectProductFilter(ProductEntity product) {
 
-            List<ProductEntity> productList = productMapper.selectProductFilter(
-                product.getProductPrice(), product.getProductName()
-            );
-        return productList;
+        List<ProductEntity> productList = productMapper.selectProductFilter(
+            product.getProductPrice(), product.getProductName()
+        );
+    return productList;
     }
 }
