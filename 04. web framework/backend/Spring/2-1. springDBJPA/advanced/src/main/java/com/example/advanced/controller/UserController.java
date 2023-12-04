@@ -58,4 +58,20 @@ public class UserController {
         log.info("dto: "+dto.toString());
         userService.insertDto(dto);
     }
+
+    @PostMapping("/update")
+    public void updateDto(@RequestBody UserDto dto) {
+
+        log.info("[UserController][updateDto] Start");
+        log.info("dto: "+dto.toString());
+        userService.updateDto(dto);
+    }
+
+    @PostMapping("/delete")
+    public void deleteDto(@RequestBody UserDto dto) {
+
+        log.info("[UserController][deleteDto] Start");
+        log.info("dto: "+dto.toString());
+        userService.deleteDto(dto);
+    }
 }

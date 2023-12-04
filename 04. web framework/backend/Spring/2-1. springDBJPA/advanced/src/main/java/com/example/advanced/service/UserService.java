@@ -3,7 +3,6 @@ package com.example.advanced.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Service;
 
 import com.example.advanced.model.dto.UserDto;
@@ -48,5 +47,21 @@ public class UserService {
 
         log.info("[UserService][findByUserNameStartingWith] Start");
         return userRepository.findByUserNameStartingWith(firstName);
+    }
+
+    public void updateDto(UserDto dto) {
+        UserDto user = userRepository.findByUserName(dto.getUserName());
+
+        if(dto.getUserAge() > 0) {
+            user.setUserAge(dto.getUserAge());
+        }
+
+        userRepository.save(user);
+    }
+
+    public void deleteDto(UserDto dto) {
+        UserDto user = userRepository.findByUserName(dto.getUserName());
+        
+        userRepository.delete(user);
     }
 }

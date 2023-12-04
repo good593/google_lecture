@@ -18,4 +18,6 @@ public interface UserRepository extends JpaRepository<UserDto, Long> {
     // userName으로 시작하는 모든 이름들을 조회!!!
     public List<UserDto> findByUserNameStartingWith(String firstName);
 
+    public UserDto findByUserName(String userName);
+
 }
