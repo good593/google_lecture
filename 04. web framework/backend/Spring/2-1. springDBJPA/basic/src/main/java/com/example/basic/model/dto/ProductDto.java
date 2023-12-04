@@ -1,7 +1,6 @@
 package com.example.basic.model.dto;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -12,12 +11,9 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-@Builder
 public class ProductDto {
-  
-  private String productId;
-  private String ProductName;
-  private int ProductPrice;
-  private int productStock;
-
+    
+    private String productName;
+    private int productPrice;
+    private String companyName;
 }

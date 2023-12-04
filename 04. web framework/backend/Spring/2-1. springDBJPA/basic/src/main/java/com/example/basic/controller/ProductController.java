@@ -1,7 +1,5 @@
 package com.example.basic.controller;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,43 +15,23 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @RestController
-@RequestMapping("/api/v1/product")
+@RequestMapping("/api/ver1/product")
 public class ProductController {
-  
-  @Autowired
-  private ProductService productService;
+    
+    @Autowired
+    private ProductService productService;
 
-  @GetMapping("/{productId}")
-  public ProductDto getProduct(@PathVariable String productId) {
-    log.info("getProduct");
-    log.info(productId);
-    return productService.getProduct(productId);
-  }
+    @GetMapping("/{productName}")
+    public ProductDto findByProductName(@PathVariable String productName) {
 
-  @GetMapping("/")
-  public List<ProductDto> selectAllProducts() {
-    log.info("selectAllProducts");
-    return productService.selectAllProducts();
-  }
+        log.info("[ProductController][findByProductName] Start");
+        return productService.findByProductName(productName);
+    }
 
-  @PostMapping("/insert")
-  public void insertProduct(@RequestBody ProductDto productDto) {
-    log.info("insertProduct");
-    productService.insertProduct(productDto);
-  }
+    @PostMapping("/save")
+    public String saveProduct(@RequestBody ProductDto dto) {
 
-  @PostMapping("/update")
-  public void updateProduct(@RequestBody ProductDto productDto) {
-    log.info("updateProduct");
-    log.info(productDto.toString());
-    productService.updateProduct(productDto);
-  }
-
-  @PostMapping("/delete/{productId}")
-  public void deleteProduct(@PathVariable String productId) {
-    log.info("deleteProduct");
-    log.info(productId);
-    productService.deleteProduct(productId);
-  }
-
+        productService.saveProduct(dto);
+        return "저장 성공";
+    }
 }
