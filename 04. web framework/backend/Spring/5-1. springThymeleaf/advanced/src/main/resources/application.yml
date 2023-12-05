@@ -1,0 +1,36 @@
+# Spring Data Source 설정 
+spring:
+  # https://blogshine.tistory.com/548
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+
+  output:
+    ansi:
+      enabled: always 
+
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/examplesdb?userSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul
+    username: urstory
+    password: u1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update 
+    properties:
+      hibernate:
+        show_sql: true 
+        format_sql: true 
+
+  # Thymeleaf (1. 루트폴더 변경, 2. 타임리프 캐시 설정 변경)
+  thymeleaf:
+    prefix: classpath:templates/
+    check-template-location: true
+    suffix: .html
+    mode: HTML
+    cache: false
+  
+  mvc:
+    static-path-pattern: /static/**
+    

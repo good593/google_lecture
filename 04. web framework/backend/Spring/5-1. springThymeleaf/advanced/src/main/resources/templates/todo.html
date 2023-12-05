@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo 메인화면</title>
+
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css" />
+
+</head>
+<body>
+    <div class="app-container d-flex align-items-center justify-content-center flex-column">
+        <h3>Todo App</h3>
+        <form action="/todo/save" method="post">
+            <div class="d-flex align-items-center mb-3">
+                <div class="form-group mr-3 mb-0">
+                    <input
+                    type="text"
+                    class="form-control"
+                    name="title"
+                    placeholder="Enter a task here"
+                    />
+                </div>
+                <button
+                    type="submit"
+                    class="btn btn-primary mr-3">
+                    Save
+                </button>
+            </div>
+        </form>
+
+        <div class="table-wrapper">
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th> No. </th>
+                        <th> Todo item </th>
+                        <th> status </th>
+                        <th> Actions </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <th:block th:each="todo: ${todoList}">
+                        <tr th:classappend="${todo.status == 'true' ? 'table-success' : 'table-light' }">
+                            <td th:text="${todo.id}"></td>
+                            <td th:classappend="${todo.status == 'true' ? 'complete' : 'task' }"
+                                th:text="${todo.title}"
+                            ></td>
+                            <td th:text="${todo.status == 'true' ? 'complete' : 'task'}"></td>
+                            <td>
+                                <a th:href="@{/todo/delete/{id}(id = ${todo.id})}" class="btn btn-danger">
+                                    Delete
+                                </a>
+                                <a th:href="@{/todo/finished/{id}(id = ${todo.id})}" class="btn btn-success">
+                                    Finished
+                                </a>
+                            </td>
+                        </tr>
+                    </th:block>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"
+    ></script>
+</body>
+</html>
