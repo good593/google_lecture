@@ -17,3 +17,4 @@ spring:
     check-template-location: true
     suffix: .mustache
     cache: false
+
