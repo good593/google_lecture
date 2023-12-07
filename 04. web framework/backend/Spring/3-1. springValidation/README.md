@@ -61,14 +61,23 @@ public ResponseEntity<String> save(@Valid @RequestBody ItemDTO itemDTO) {
 
 ---
 ## Validation 관련 주요 어노테이션
+### 문자열 
 - `@Size`: 문자의 길이 조건 / `@NotNull`: null 값 불가 
 - `@NotEmpty`: @NotNull + "" 값 불가 / `@NotBlank`: @NotEmpty + " " 값 불가 
+- `@Pattern(regexp="", message="")`: 정규식을 통한 조건 
+- `@Email`: 이메일 
 
+### 날짜 
 - `@Past`: 과거 날짜 /  `@PastOrPresent`: @Past + 오늘 날짜
 - `@Future`: 미래 날짜 / `@FutureOrPresent`: @Future + 오늘 날짜
 
-- `Pattern`: 정규식을 통한 조건 
-- `Max`: 최대값 / `Min`: 최소값 
+---
+### 숫자 
+- `@Max`: 최대값 / `@Min`: 최소값 
+- `@Positive`: 양수만 / `@PositiveOrZero`: 양수와 0만
+- `@Negative`: 음수만 / `@NegativeOrZero`: 음수와 0만
+
+### 직접 검증 
 - `AssertTrue`: 참 / `AssertFalse`: 거짓
 
 ---

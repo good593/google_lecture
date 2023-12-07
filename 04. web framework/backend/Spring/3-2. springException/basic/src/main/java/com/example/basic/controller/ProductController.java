@@ -15,25 +15,38 @@ import com.example.basic.service.ProductService;
 @RequestMapping("/api/v1/product")
 public class ProductController {
 
-  @Autowired
-  private ProductService productService;
-  
-  @GetMapping("/custom-exception")
-  public void customExceptionTest() throws Exception {
-    throw new HubException(ExceptionConstant.PRODUCT, HttpStatus.FORBIDDEN, "customException Test!!");
-  }
-  
-  @GetMapping("/custom-exception-no-message")
-  public void customExceptionWithoutMessageTest() throws Exception {
-    throw new HubException(ExceptionConstant.PRODUCT, HttpStatus.FORBIDDEN);
-  }
-  
-  @GetMapping("/exception-test/{exception-type}")
-  public String exceptiontest(@PathVariable("exception-type") String exception_type) throws Exception  {
+    @Autowired
+    private ProductService productService;
+    
+    @GetMapping("/custom-exception")
+    public void customExceptionTest() throws Exception {
+        throw new HubException(ExceptionConstant.PRODUCT, HttpStatus.FORBIDDEN, "customException Test!!");
+    }
+    
+    @GetMapping("/custom-exception-no-message")
+    public void customExceptionWithoutMessageTest() throws Exception {
+        throw new HubException(ExceptionConstant.PRODUCT, HttpStatus.FORBIDDEN);
+    }
+    
+    @GetMapping("/exception-test/{exception-type}")
+    public String exceptiontest(@PathVariable("exception-type") String exception_type) throws Exception  {
 
-    return productService.exceptionTest(exception_type);
-  }
+        return productService.exceptionTest(exception_type);
+    }
 
-  
+    @GetMapping("/testOk")
+    public String testOk() throws Exception {
+        return productService.testOk();
+    }
+
+    @GetMapping("/daoException")
+    public String daoException() throws Exception {
+        return productService.daoException();
+    }
+
+        @GetMapping("/serviceException")
+    public String serviceException() throws Exception {
+        return productService.serviceException();
+    }
 
 }
