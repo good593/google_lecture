@@ -1,0 +1,42 @@
+server:
+  servlet:
+    encoding:
+      # 한글깨짐 처리 
+      force-response: true
+
+# Spring Data Source 설정 
+spring:
+
+  output:
+    ansi:
+      enabled: always 
+
+  # 데이터 베이스 
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/examplesdb?userSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul
+    username: urstory
+    password: u1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  #  데이터 베이스 커넥션 
+  jpa:
+    hibernate:
+      ddl-auto: update 
+    properties:
+      hibernate:
+        show_sql: true 
+        format_sql: true 
+
+  # mustache (1. 루트폴더 변경, 2. 타임리프 캐시 설정 변경)
+  mustache:
+    prefix: classpath:templates/
+    check-template-location: true
+    suffix: .html
+    cache: false
+
+  mvc:
+    static-path-pattern: /static/**
+
+
+
+
