@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Window</h1>
+
+    <script>
+        // window
+        function sayHi() {
+            alert("안녕하세요.");
+        }
+
+        window.sayHi();
+    </script>
+    <script>
+        // navigator
+        document.write("<h3>navigator</h3>");
+        document.write("현재 사용 중인 브라우저의 이름은 " + navigator.appName + "입니다.<br>");
+        document.write("또한, 해당 브라우저의 코드명은 " + navigator.appCodeName + "입니다.<br>");
+        document.write("현재 사용 중인 브라우저의 버전 정보는 " + navigator.appVersion + "입니다.<br><br>");
+        document.write("userAgent 프로퍼티로 알 수 있는 추가 정보는 " + navigator.userAgent + "입니다.<br>");
+        document.write("현재 브라우저가 실행되고 있는 운영체제는 " + navigator.platform + "입니다.<br>");
+        document.write("현재 브라우저의 기본 언어 설정은 " + navigator.language + "입니다.<br>");
+    </script>
+    <script src="bom.js">
+    </script>
+    <script src="dom.js">
+    </script>
+</body>
+</html>
