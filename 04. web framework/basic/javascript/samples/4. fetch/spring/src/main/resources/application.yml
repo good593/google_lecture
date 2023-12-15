@@ -1,0 +1,17 @@
+# Spring Data Source 설정 
+spring:
+
+  output:
+    ansi:
+      enabled: always 
+
+  # Thymeleaf (1. 루트폴더 변경, 2. 타임리프 캐시 설정 변경)
+  thymeleaf:
+    prefix: classpath:templates/
+    check-template-location: true
+    suffix: .html
+    mode: HTML
+    cache: false
+
+  mvc:
+    static-path-pattern: /static/**
