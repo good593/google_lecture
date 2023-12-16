@@ -25,27 +25,20 @@ public class UserController {
      * 누구나 접근 가능
      */
     @GetMapping("/index")
-    public String index(Authentication authentication) {
+    public String index(Authentication authentication, Model model) {
         if(authentication != null) {
             UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+            model.addAttribute("username", userDetails.getUsername());
         }
 
         return "index";
     }
 
     @GetMapping("/loginPage")
-    public String loginPage(
-        @RequestParam(value = "error", required = false)String error,
-        @RequestParam(value = "exception", required = false)String exception, Model model) {
-        
-        model.addAttribute("error", error);
-        model.addAttribute("exception", exception);
-        return "login/loginPage";
-    }
+    public String loginPage(@RequestParam(value = "errorMessage", required = false) String errorMessage, Model model) {
 
-    @GetMapping("/logout")
-    public String logout() {
-        return "redirect:/loginPage";
+        model.addAttribute("errorMessage", errorMessage);
+        return "login/loginPage";
     }
 
     @GetMapping("/joinPage")

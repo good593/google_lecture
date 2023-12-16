@@ -11,33 +11,39 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
+import lombok.extern.slf4j.Slf4j;
+
 // https://velog.io/@dailylifecoding/spring-security-study-authenticationprovider
 // https://gregor77.github.io/2021/05/18/spring-security-03/
 // https://velog.io/@ewan/Spring-Security-Custom-Authentication-Provider
 // https://soojae.tistory.com/55
+@Slf4j
 @Configuration
-public class SecurityProvider implements AuthenticationProvider {
+public class AuthProvider implements AuthenticationProvider {
 
     @Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Autowired
-    private SecurityUserService securityUserService;
+    private AuthUserService securityUserService;
 
     // ID, PW 검증 확인!!
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
         // TODO Auto-generated method stub
-        String username=(String) authentication.getName();
-		String password=(String) authentication.getCredentials();
+        log.info("[AuthProvider][authenticate] Start");
+
+        String name= authentication.getName();
+		String pwd= (String)authentication.getCredentials();
+        log.info("name: "+name+" / pwd: "+pwd);
 
         // ID 검증 
-        UserDetails userDetails = (SecurityUserDto)securityUserService.loadUserByUsername(username);
+        UserDetails userDetails = (AuthUserDto)securityUserService.loadUserByUsername(name);
         if(userDetails == null){
-            throw new UsernameNotFoundException("There is no username >> "+username);
+            throw new UsernameNotFoundException("There is no username >> "+name);
         }
         // PW 검증 
-        else if (isNotMatches(password, userDetails.getPassword())) {
+        else if (isNotMatches(pwd, userDetails.getPassword())) {
             throw new BadCredentialsException("Your password is incorrect.");
         }
 

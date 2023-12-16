@@ -8,6 +8,7 @@ import com.example.basic.model.dto.UserDto;
 
 public interface UserRepository extends JpaRepository<UserDto, String> {
     
-    @Query(value = "select * from user where username = :username", nativeQuery = true)
-    public UserDto getUserDtoByUsername(@Param(value = "username") String username);
+    @Query(value = "select * from user where name = :name", nativeQuery = true)
+    public UserDto getUserDtoByName(@Param(value = "name") String name);
+
 }

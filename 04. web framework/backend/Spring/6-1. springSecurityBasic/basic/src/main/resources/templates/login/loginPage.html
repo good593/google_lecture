@@ -7,12 +7,9 @@
 </head>
 <body>
     <h1>로그인 화면</h1>
-    {{#error}}
-    <p>{{error}}</p>
-    {{/error}}
-    {{#exception}}
-    <p>{{exception}}</p>
-    {{/exception}}
+    {{#errorMessage}}
+    <p>{{errorMessage}}</p>
+    {{/errorMessage}}
     <form action="/login" method="post">
         <input type="text" name="username" placeholder="아이디를 입력해주세요." />
         <br />

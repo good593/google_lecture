@@ -13,7 +13,7 @@ import lombok.AllArgsConstructor;
 // Spring Security가 사용할 수 있는 전용 Dto(UserDetails)를 정의함!!
 // 우리가 만든 UserDto를 이용하여 UserDetails를 정의함!!
 @AllArgsConstructor
-public class SecurityUserDto implements UserDetails {
+public class AuthUserDto implements UserDetails {
 
     private UserDto userDto;
 
@@ -36,13 +36,13 @@ public class SecurityUserDto implements UserDetails {
     @Override
     public String getPassword() {
         // TODO Auto-generated method stub
-        return userDto.getPassword();
+        return userDto.getPwd();
     }
 
     @Override
     public String getUsername() {
         // TODO Auto-generated method stub
-        return userDto.getUsername();
+        return userDto.getName();
     }
 
     @Override

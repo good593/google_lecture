@@ -1,5 +1,6 @@
 package com.example.basic.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
@@ -8,6 +9,10 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+
+import com.example.basic.config.handler.LoginAuthFailureHandler;
+import com.example.basic.config.handler.LoginAuthSuccessHandler;
+import com.example.basic.config.handler.LogoutAuthSuccesshandler;
 
 @Configuration // 스프링 설정 파일!!
 @EnableWebSecurity // 여러가지 설정 중에서 시큐리티 설정!!
@@ -20,6 +25,29 @@ public class SecurityConfig {
     public BCryptPasswordEncoder eCryptPasswordEncoder() {
         return new BCryptPasswordEncoder();
     }
+
+    @Autowired
+    private LoginAuthSuccessHandler loginAuthSuccessHandler;
+    @Autowired
+    private LoginAuthFailureHandler loginAuthFailureHandler;
+    @Autowired
+    private LogoutAuthSuccesshandler logoutAuthSuccesshandler;
+
+    // @Bean
+    // public AuthenticationSuccessHandler loginAuthSuccessHandler() {
+    //     return new LoginAuthSuccessHandler();
+    // }
+
+    // @Bean
+    // public AuthenticationFailureHandler loginAuthFailureHandler() {
+    //     return new LoginAuthFailureHandler();
+    // }
+
+    // @Bean
+    // public LogoutSuccessHandler logoutAuthSuccesshandler() {
+    //     return new LogoutAuthSuccesshandler();
+    // }
+
 
     @Bean
     // 인증(로그인) & 인가(권한)에 대한 시큐리티 설정!!
@@ -57,14 +85,20 @@ public class SecurityConfig {
                 // 그러면, Spring Security가 로그인 검증을 진행함!!!
                 // Controller에서는 해당 "/login"을 만들 필요가 없음!! 
                 .loginProcessingUrl("/login")
-                // 로그인 성공시 접속할 url path 
-                // Controller에서 해당 "/user"를 만들어야 함!!
-                .defaultSuccessUrl("/user/index")
-                // .failureForwardUrl(null)
-                // .failureHandler()
-                // authenticationFailureHandler
-                // .failureUrl("/loginPage")
+                // 로그인 성공시 
+                .successHandler(loginAuthSuccessHandler)
+                // .defaultSuccessUrl("/user/index")
+                // 로그인 실패시 
+                .failureHandler(loginAuthFailureHandler)
                 // 그외의 모든 url path는 누구나 접근 가능 
+                .permitAll()
+            )
+            // 로그아웃에 대한 설정 
+            .logout(logout -> logout
+                // 로그아웃 요청 url path 
+                .logoutUrl("/logout")
+                // 로그아웃 성공시
+                .logoutSuccessHandler(logoutAuthSuccesshandler)
                 .permitAll()
             );
 

@@ -10,19 +10,19 @@ import com.example.basic.model.dto.UserDto;
 import com.example.basic.model.repository.UserRepository;
 
 @Service
-public class SecurityUserService implements UserDetailsService {
+public class AuthUserService implements UserDetailsService {
 
     @Autowired
     private UserRepository userRepository;
 
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+    public UserDetails loadUserByUsername(String name) throws UsernameNotFoundException {
         // TODO Auto-generated method stub
-        UserDto userDto = userRepository.getUserDtoByUsername(username);
+        UserDto userDto = userRepository.getUserDtoByName(name);
 
         // username의 데이터가 database에 존재함(가입함)!!
         if(userDto != null) {
-            return new SecurityUserDto(userDto);
+            return new AuthUserDto(userDto);
         }
         
 
